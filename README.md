@@ -4,8 +4,8 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 
 ## OWASP アプリケーションセキュリティ検証標準 4.0 日本語版
 
-* [ヘッダ] <!-- (4.0/ja/0x00-Header.md) -->
-* [扉] <!-- (4.0/ja/0x01-Frontispiece.md) -->
+* [ヘッダ](4.0/ja/0x00-Header.md)
+* [扉](4.0/ja/0x01-Frontispiece.md)
 * [序文] <!-- (4.0/ja/0x02-Preface.md) -->
 * [ASVSの使い方] <!-- (4.0/ja/0x03-Using-ASVS.md) -->
 * [監査と認定] <!-- (4.0/ja/0x04-Assessment_and_Certification.md) -->
@@ -27,4 +27,4 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 * [V19: 構成検証要件] <!-- (4.0/ja/0x24-V19-Config.md) -->
 * [V20: Internet of Things 検証要件](4.0/ja/0x25-V20-IoT.md)
 * [付録 A: 用語集] <!-- (4.0/ja/0x90-Appendix-A_Glossary.md) -->
-* [付録 B: 参考情報] <!-- (4.0/ja/0x91-Appendix-B_References.md) -->
+* [付録 B: 参考情報](4.0/ja/0x91-Appendix-B_References.md)
