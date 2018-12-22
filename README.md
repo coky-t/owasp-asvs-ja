@@ -12,7 +12,7 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 * [V1: アーキテクチャ、設計、脅威モデリング要件] <!-- (4.0/ja/0x10-V1-Architecture.md) -->
 * [V2: 認証検証要件] <!-- (4.0/ja/0x11-V2-Authentication.md) -->
 * [V3: セッション管理検証要件] <!-- (4.0/ja/0x12-V3-Session-management.md) -->
-* [V4: アクセス制御検証要件] <!-- (4.0/ja/0x12-V4-Access-Control.md) -->
+* [V4: アクセス制御検証要件](4.0/ja/0x12-V4-Access-Control.md)
 * [V5: 妥当性確認、サニタイズ、エンコーディング検証要件] <!-- (4.0/ja/0x13-V5-Input-Validation.md) -->
 * [V7: 暗号化検証要件](4.0/ja/0x14-V7-Cryptography.md)
 * [V8: エラー処理およびログ記録検証要件](4.0/ja/0x15-V8-Error-Logging.md)
