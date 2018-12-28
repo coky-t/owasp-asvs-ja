@@ -28,6 +28,7 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 * [V20: Internet of Things 検証要件](4.0/ja/0x25-V20-IoT.md)
 * [付録 A: 用語集] <!-- (4.0/ja/0x90-Appendix-A_Glossary.md) -->
 * [付録 B: 参考情報](4.0/ja/0x91-Appendix-B_References.md)
+* [付録 C: コード例](4.0/ja/0x92-Appendix-C_CodeExamples.md)
 
 ### 参考資料
 
