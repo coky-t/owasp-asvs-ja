@@ -7,7 +7,7 @@
 ## 著作権とライセンス
 
 ![license](../images/license.png)
-Copyright © 2018 The OWASP Foundation. 本書は Creative Commons Attribution ShareAlike 3.0 license に基づいてリリースされています。再使用または配布する場合には、他社に対し本著作物のライセンス条項を明らかにする必要があります。
+Copyright © 2018 The OWASP Foundation. 本書は [Creative Commons Attribution ShareAlike 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/) に基づいてリリースされています。再使用または配布する場合には、他社に対し本著作物のライセンス条項を明らかにする必要があります。
 
 ## ドラフト版
 
