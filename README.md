@@ -25,10 +25,10 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 * [V17: モバイル検証要件](4.0/ja/0x22-V17-Mobile.md)
 * [V18: API およびウェブサービス検証要件](4.0/ja/0x23-V18-API.md)
 * [V19: 構成検証要件](4.0/ja/0x24-V19-Config.md)
-* [V20: Internet of Things 検証要件](4.0/ja/0x25-V20-IoT.md)
 * [付録 A: 用語集] <!-- (4.0/ja/0x90-Appendix-A_Glossary.md) -->
 * [付録 B: 参考情報](4.0/ja/0x91-Appendix-B_References.md)
 * [付録 C: コード例](4.0/ja/0x92-Appendix-C_CodeExamples.md)
+* [付録 D: Internet of Things 検証要件](4.0/ja/0x93-Appendix-D_IoT.md)
 
 ### 参考資料
 
