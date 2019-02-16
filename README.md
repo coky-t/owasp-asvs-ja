@@ -22,7 +22,6 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 * [V13: 悪意あるコード検証要件](4.0/ja/0x19-V13-Malicious.md)
 * [V15: ビジネスロジック検証要件](4.0/ja/0x20-V15-BusLogic.md)
 * [V16: ファイルおよびリソース検証要件](4.0/ja/0x21-V16-Files-Resources.md)
-* [V17: モバイル検証要件](4.0/ja/0x22-V17-Mobile.md)
 * [V18: API およびウェブサービス検証要件](4.0/ja/0x23-V18-API.md)
 * [V19: 構成検証要件](4.0/ja/0x24-V19-Config.md)
 * [付録 A: 用語集] <!-- (4.0/ja/0x90-Appendix-A_Glossary.md) -->
