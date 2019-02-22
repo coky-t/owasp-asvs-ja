@@ -13,7 +13,7 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 * [V2: 認証検証要件] <!-- (4.0/ja/0x11-V2-Authentication.md) -->
 * [V3: セッション管理検証要件] <!-- (4.0/ja/0x12-V3-Session-management.md) -->
 * [V4: アクセス制御検証要件](4.0/ja/0x12-V4-Access-Control.md)
-* [V5: 妥当性確認、サニタイズ、エンコーディング検証要件] <!-- (4.0/ja/0x13-V5-Input-Validation.md) -->
+* [V5: 妥当性確認、サニタイズ、エンコーディング検証要件] <!-- (4.0/ja/0x13-V5-Validation-Sanitization-Encoding.md) -->
 * [V6: 暗号化検証要件](4.0/ja/0x14-V6-Cryptography.md)
 * [V7: エラー処理およびログ記録検証要件](4.0/ja/0x15-V7-Error-Logging.md)
 * [V8: データ保護検証要件](4.0/ja/0x16-V8-Data-Protection.md)
