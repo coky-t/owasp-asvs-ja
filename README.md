@@ -25,8 +25,7 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 * [V14: 構成検証要件](4.0/ja/0x22-V14-Config.md)
 * [付録 A: 用語集] <!-- (4.0/ja/0x90-Appendix-A_Glossary.md) -->
 * [付録 B: 参考情報](4.0/ja/0x91-Appendix-B_References.md)
-* [付録 C: コード例](4.0/ja/0x92-Appendix-C_CodeExamples.md)
-* [付録 D: Internet of Things 検証要件](4.0/ja/0x93-Appendix-D_IoT.md)
+* [付録 C: Internet of Things 検証要件](4.0/ja/0x93-Appendix-C_IoT.md)
 
 ### 参考資料
 
