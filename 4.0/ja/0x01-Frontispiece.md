@@ -9,28 +9,47 @@
 ![license](../images/license.png)
 Copyright © 2019 The OWASP Foundation. 本書は [Creative Commons Attribution ShareAlike 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/) に基づいてリリースされています。再使用または配布する場合には、他社に対し本著作物のライセンス条項を明らかにする必要があります。
 
-## ドラフト版
+## リリース候補
 
-これは標準規格のドラフト版であり、リリースされるまで使用すべきではありません。標準規格内に以下のような対処すべき問題が見つかった場合、
-
-* 標準規格の設計。
-* コントロールの欠落。
-* 無効または古いコントロール。
-* 不明瞭な文言、スペル、文法の問題。
-* 書式設定の問題。
-* 翻訳の問題 – あなたの言語でそれを表現しようとすることが困難または不可能となるようなコントロールの文言がある場合、私たちにお知らせください。それがスペイン語やタイ語で使えない場合、おそらく英語でも使えません。
-* 翻訳の申し出 – あなたの言語をすでに使っている人をあなたに導くことができるように、私たちにお知らせください。
-
-ここで issue を記録してください: https://github.com/OWASP/ASVS/issues
+このバージョンが基本的には最終版です。まだ使用しないでください。問題を見つけた場合は、 https://github.com/OWASP/ASVS/issues に issue を記録してください。
 
 Version 4.0, 2019
 
 ## プロジェクトリーダー
 
-Andrew van der Stock  
-Daniel Cuthbert  
-Jim Manico
+- Andrew van der Stock
+- Daniel Cuthbert
+- Jim Manico
+- Josh C Grossman
+- Mark Burnett
 
 ## 執筆者およびレビュー担当者
 
-- Github の closed バグから探してください
+- Osama Elnaggar
+- Erland Oftedal
+- Serg Belkommen
+- David Johansson
+- Tonimir Kisasondi 
+- Ron Perris
+- Abhay Bhargav
+- Benedikt Bauer
+- ScriptingXSS
+- Philippe De Ryck
+- Grog's Axle
+- Marco Schnüriger
+- Jacob Salassi
+- Glenn ten Cate
+- Anthony Weems
+- bschach
+- javixeneize
+- Dan Cornell
+- hello7s
+- Lewis Ardern
+- Jim Newman
+- Stuart Gunter
+- Geoff Baskwill
+- Talargoni
+- Ståle Petterse
+- Kelby Ludwig
+- Jason Morrow
+- Rogan Dawes
