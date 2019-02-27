@@ -4,6 +4,6 @@
 
 # アプリケーションセキュリティ検証標準 4.0
 
-## DRAFT
+## Release Candidate
 
 February 2019
