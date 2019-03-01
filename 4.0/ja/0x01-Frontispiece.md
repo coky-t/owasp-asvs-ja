@@ -2,18 +2,14 @@
 
 ## 本標準について
 
-アプリケーションセキュリティ検証標準はアーキテクト、開発者、テスト担当者、セキュリティ専門家、さらには消費者がセキュアなアプリケーションの定義に使用できるアプリケーションセキュリティ要件またはテストのリストです。
+アプリケーションセキュリティ検証標準はアーキテクト、開発者、テスト担当者、セキュリティ専門家、ツールベンダー、消費者がセキュアなアプリケーションの定義、ビルド、テスト、検証に使用できるアプリケーションセキュリティ要件またはテストのリストです。
 
 ## 著作権とライセンス
 
 ![license](../images/license.png)
-Copyright © 2019 The OWASP Foundation. 本書は [Creative Commons Attribution ShareAlike 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/) に基づいてリリースされています。再使用または配布する場合には、他社に対し本著作物のライセンス条項を明らかにする必要があります。
+Copyright © 2008-2019 The OWASP Foundation. 本書は [Creative Commons Attribution ShareAlike 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/) に基づいてリリースされています。再使用または配布する場合には、他社に対し本著作物のライセンス条項を明らかにする必要があります。
 
-## リリース候補
-
-このバージョンが基本的には最終版です。まだ使用しないでください。問題を見つけた場合は、 https://github.com/OWASP/ASVS/issues に issue を記録してください。
-
-Version 4.0, 2019
+Version 4.0, March 2019
 
 ## プロジェクトリーダー
 
@@ -26,13 +22,14 @@ Version 4.0, 2019
 ## 執筆者およびレビュー担当者
 
 - Osama Elnaggar
-- Erland Oftedal
+- Erlend Oftedal
 - Serg Belkommen
 - David Johansson
 - Tonimir Kisasondi
 - Ron Perris
 - Abhay Bhargav
 - Benedikt Bauer
+- Elar Lang
 - ScriptingXSS
 - Philippe De Ryck
 - Grog's Axle
@@ -49,7 +46,11 @@ Version 4.0, 2019
 - Stuart Gunter
 - Geoff Baskwill
 - Talargoni
-- Ståle Petterse
+- Ståle Pettersen
 - Kelby Ludwig
 - Jason Morrow
 - Rogan Dawes
+
+アプリケーションセキュリティ検証標準は 2008 年の ASVS 1.0 から 2016 年の 3.0 に至る関係者の責任の下で構築されています。今日の ASVS にいまだ残っている構造と検証項目の多くはもともと Mike Boberski, Jeff Williams, Dave Wichers によって書かれましたが、さらに多くの執筆者がいます。以前に関わりのあったすべての人々に感謝します。以前のバージョンに貢献したすべての人の包括的なリストについては、以前の各バージョンを調べてください。
+
+クレジットが上記のクレジットリストにない場合は、 vanderaj@owasp.org に連絡するか、将来の 4.x アップデートで認識されるように GitHub のチケットを記録してください。
