@@ -17,7 +17,7 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 * [V6: 暗号化検証要件](4.0/ja/0x14-V6-Cryptography.md)
 * [V7: エラー処理およびログ記録検証要件](4.0/ja/0x15-V7-Error-Logging.md)
 * [V8: データ保護検証要件](4.0/ja/0x16-V8-Data-Protection.md)
-* [V9: 通信検証要件] <!-- (4.0/ja/0x17-V9-Communications.md) -->
+* [V9: 通信検証要件](4.0/ja/0x17-V9-Communications.md)
 * [V10: 悪意あるコード検証要件](4.0/ja/0x18-V10-Malicious.md)
 * [V11: ビジネスロジック検証要件](4.0/ja/0x19-V11-BusLogic.md)
 * [V12: ファイルおよびリソース検証要件](4.0/ja/0x20-V12-Files-Resources.md)
