@@ -15,7 +15,7 @@
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
 | **11.1.1** | アプリケーションは同じユーザーのビジネスロジックフローをシーケンシャルなステップ順序でのみ処理し、ステップをスキップしないことを検証します。 | ✓ | ✓ | ✓ | 841 |
-| **11.1.2** | アプリケーションはすべてのステップで現実的な人的時間、すなわちトランザクションがあまりに速く送信されていない、で処理されたビジネスロジックフローのみを処理することを検証します。 | ✓ | ✓ | ✓ | 779 |
+| **11.1.2** | アプリケーションはすべてのステップで現実的な人的時間、すなわちトランザクションがあまりに速く送信されていない、で処理されたビジネスロジックフローのみを処理することを検証します。 | ✓ | ✓ | ✓ | 799 |
 | **11.1.3** | アプリケーションはユーザーごとに正しく適用される特定のビジネスアクションやトランザクションに対して適切な制限があることを検証します。 | ✓ | ✓ | ✓ | 770 |
 | **11.1.4** | アプリケーションはデータ流出、過剰なビジネスロジックリクエスト、過度のファイルアップロード、サービス拒否攻撃に対して検出および防御するための十分な自動化防止コントロールがあることを検証します。 | ✓ | ✓ | ✓ | 770 |
 | **11.1.5** | アプリケーションは、脅威モデリングや同様の方法論を用いて特定された、起こりうるビジネスリスクや脅威から保護するためにビジネスロジック制限や妥当性確認があることを検証します。 | ✓ | ✓ | ✓ | 841 |
@@ -28,7 +28,6 @@
 詳細については、以下も参照してください。
 
 * [OWASP Testing Guide 4.0: Business Logic Testing](https://www.owasp.org/index.php/Testing_for_business_logic)
-* [OWASP Cheat Sheet](https://www.owasp.org/index.php/Business_Logic_Security_Cheat_Sheet)
 * [OWASP AppSensor](https://www.owasp.org/index.php/OWASP_AppSensor_Project) や [OWASP Automated Threats to Web Applications](https://www.owasp.org/index.php/OWASP_Automated_Threats_to_Web_Applications) の使用を含め、自動化対策はさまざまな方法で実現できます。
 * [OWASP AppSensor](https://www.owasp.org/index.php/OWASP_AppSensor_Project) は攻撃検出と対応にも役立ちます。
 * [OWASP Cornucopia](https://www.owasp.org/index.php/OWASP_Cornucopia)
