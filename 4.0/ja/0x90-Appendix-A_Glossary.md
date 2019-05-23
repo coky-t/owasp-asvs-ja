@@ -31,7 +31,8 @@
 - **セキュリティ設定 (Security Configuration)** – セキュリティコントロールの使用方法に影響を与えるアプリケーションの実行時設定です。
 - **セキュリティコントロール (Security Control)** – （アクセス制御チェックなどの）セキュリティチェックを実行する、もしくは（監査記録の生成などの）呼び出されたときにセキュリティ効果をもたらす、機能やコンポーネントです。
 - **SQL インジェクション (SQL Injection, SQLi)** – 悪意のあるSQL文がエントリポイントに挿入される、データ駆動型アプリケーションの攻撃に使用されるコードインジェクション手法です。
-- **シングルサインオン認証 (Single Sign On Authentication, SSO Authentication)** – ユーザーがひとつのアプリケーションにログインするとき、他のアプリケーションに再認証の必要なく自動的にログインするものです。例えば、Google にログインすると、Youtube, Google Docs, Gmail などの他の Google サービスにアクセスする際に、自動的にログインします。
+- **シングルサインオン認証 (Single Sign On Authentication, SSO Authentication)** – ユーザーがひとつのアプリケーションにログインするとき、他のアプリケーションに再認証の必要なく自動的にログインするものです。例えば、Google にログインすると、YouTube, Google Docs, Gmail などの他の Google サービスにアクセスする際に、自動的にログインします。
+- **スケーラブルベクターグラフィックス (Scalable Vector Graphics, SVG)** - 。
 - **脅威モデリング (Threat Modeling)** – 脅威エージェント、セキュリティゾーン、セキュリティコントロール、重要な技術的およびビジネス的資産を特定することにより、より洗練されたセキュリティアーキテクチャを開発することからなる手法です。
 - **トランスポート層セキュリティ (Transport Layer Security)** – ネットワーク上の通信セキュリティを提供する暗号プロトコルです。
 - **URI/URL/URL フラグメント (URI/URL/URL fragments)** – Uniform Resource Identifier は名前やウェブリソースを識別するために使用される文字列です。Uniform Resource Locator は多くの場合リソースへの参照として使用されます。
