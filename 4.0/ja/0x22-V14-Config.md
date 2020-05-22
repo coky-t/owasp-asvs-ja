@@ -63,7 +63,7 @@
 | **14.4.4** | すべてのレスポンスに X-Content-Type-Options: nosniff が含まれていることを検証します。 | ✓ | ✓ | ✓ | 116 |
 | **14.4.5** | Strict-Transport-Security ヘッダが、Strict-Transport-Security: max-age=15724800; includeSubdomains のように、すべてのレスポンスとすべてのサブドメインに含まれていることを検証します。 | ✓ | ✓ | ✓ | 523 |
 | **14.4.6** | "no-referrer" や "same-origin" などの、適切な "Referrer-Policy" ヘッダが含まれていることを検証します。 | ✓ | ✓ | ✓ | 116 |
-| **14.4.7** | サードパーティサイトにコンテンツを埋め込むべきではないサイトに対して、適切な X-Frame-Options または Content-Security-Policy: frame-ancestors ヘッダが使用されていることを検証します。 | ✓ | ✓ | ✓ | 346 |
+| **14.4.7** | ウェブアプリケーションのコンテンツはデフォルトでサードパーティのサイトに埋め込むことができないこと、および適切な Content-Security-Policy: frame-ancestors と X-Frame-Options ヘッダを使用して必要な場所でのみ正規のリソースの埋め込みが許可されていることを検証します。 | ✓ | ✓ | ✓ | 346 |
 
 ## V14.5 HTTP リクエストヘッダ妥当性確認要件
 
