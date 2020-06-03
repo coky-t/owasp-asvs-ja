@@ -2,6 +2,7 @@
 
 - **二要素認証 (Two-Factor Authentication, 2FA)** – アカウントログインに第二レベルの認証を追加します。
 - **アドレス空間配置のランダム化 (Address Space Layout Randomization, ASLR)** – メモリ破壊バグの悪用をより困難にする手法です。
+- **許可リスト (Allowlist)** – 許可されたデータまたは操作のリストです。例えば、入力の検証を実行できる文字のリストです。
 - **アプリケーションセキュリティ (Application Security)** – アプリケーションレベルのセキュリティは基礎となるオペレーティングシステムや接続されるネットワークにフォーカスするのではなく、開放型システム間相互接続参照モデル（OSIモデル）のアプリケーション層を構成するコンポーネントの分析にフォーカスします。
 - **アプリケーションセキュリティ検証 (Application Security Verification)** – OWASP ASVS に対するアプリケーションの技術的評価です。
 - **アプリケーションセキュリティ検証報告書 (Application Security Verification Report)** – 対象とするアプリケーションの検証者が作成した全体的な結果と分析をまとめた報告書です。
@@ -37,5 +38,4 @@
 - **トランスポート層セキュリティ (Transport Layer Security)** – ネットワーク上の通信セキュリティを提供する暗号プロトコルです。
 - **URI/URL/URL フラグメント (URI/URL/URL fragments)** – Uniform Resource Identifier は名前やウェブリソースを識別するために使用される文字列です。Uniform Resource Locator は多くの場合リソースへの参照として使用されます。
 - **検証者 (Verifier)** – OWASP ASVS 要件に照らし合わせてアプリケーションをレビューしている人またはチームです。
-- **ホワイトリスト (Whitelist)** – 許可されたデータまたは操作のリストです。例えば、入力の検証を実行できる文字のリストです。
 - **X.509 証明書 (X.509 Certificate)** – 広く受け入れられている国際 X.509 公開鍵基盤（Public Key Infrastructure, PKI）標準を使用するデジタル証明書であり、公開鍵が証明書に含まれるユーザー、コンピュータ、サービスのIDに属することを検証します。
