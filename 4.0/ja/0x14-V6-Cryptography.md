@@ -27,9 +27,9 @@
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
 | **6.2.1** | すべての暗号化モジュールがセキュアに失敗し、パディングオラクル攻撃を有効にしない方法でエラーが処理されることを検証します。 | ✓ | ✓ | ✓ | 310 |
-| **6.2.2** | カスタムコードによる暗号化方式の代わりに、業界で実績のある、または政府が承認した暗号化アルゴリズム、モード、ライブラリが使用されていることを検証します。 ([C8](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | | ✓ | ✓ | 327 |
+| **6.2.2** | カスタムコードによる暗号化方式の代わりに、業界で実績のある、または政府が承認した暗号化アルゴリズム、モード、ライブラリが使用されていることを検証します。 ([C8](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 327 |
 | **6.2.3** | 最新のアドバイスを使用して、暗号化初期化ベクトル、暗号構成、ブロックモードがセキュアに構成されていることを検証します。 |  | ✓ | ✓ | 326 |
-| **6.2.4** | 乱数、暗号化アルゴリズムやハッシュアルゴリズム、鍵長、ラウンド、暗号方式やモード、が暗号の破壊を防ぐためにいつでも再構成、アップグレード、交換できることを検証します。 ([C8](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | | ✓ | ✓ | 326 |
+| **6.2.4** | 乱数、暗号化アルゴリズムやハッシュアルゴリズム、鍵長、ラウンド、暗号方式やモード、が暗号の破壊を防ぐためにいつでも再構成、アップグレード、交換できることを検証します。 ([C8](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 326 |
 | **6.2.5** | 既知のセキュアではないブロックモード (ECB など) 、パディングモード (PKCS#1 v1.5 など) 、ブロックサイズの小さい暗号 (Triple-DES, Blowfish など) 、脆弱なハッシュアルゴリズム (MD5, SHA1 など) は後方互換性のために必要とされない限り使用されないことを検証します。 | | ✓ | ✓ | 326 |
 | **6.2.6** | ノンス、初期化ベクトル、その他の使い捨て番号を特定の暗号化鍵で複数回使用していないことを検証します。生成方法は使用されているアルゴリズムに適している必要があります。 | | ✓ | ✓ | 326 |
 | **6.2.7** | 暗号文が不正に変更されていないことを確認するために、暗号化されたデータが署名、認証された暗号モード、または HMAC によって認証されていることを検証します。 | | | ✓ | 326 |
@@ -51,13 +51,13 @@
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
-| **6.4.1** | 鍵保管庫などの秘密管理ソリューションが秘密をセキュアに作成、保存、アクセス制御、破壊するために使用されていることを検証します。 ([C8](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | | ✓ | ✓ | 798 |
-| **6.4.2** | 鍵マテリアルはアプリケーションに開示されておらず、代わりに暗号操作用の保管庫などの隔離されたセキュリティモジュールを使用していることを検証します。 ([C8](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | | ✓ | ✓ | 320 |
+| **6.4.1** | 鍵保管庫などの秘密管理ソリューションが秘密をセキュアに作成、保存、アクセス制御、破壊するために使用されていることを検証します。 ([C8](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 798 |
+| **6.4.2** | 鍵マテリアルはアプリケーションに開示されておらず、代わりに暗号操作用の保管庫などの隔離されたセキュリティモジュールを使用していることを検証します。 ([C8](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 320 |
 
 ## 参考情報
 
 詳細については、以下も参照してください。
 
-* [OWASP Testing Guide 4.0: Testing for weak Cryptography](https://www.owasp.org/index.php/Testing_for_weak_Cryptography)
-* [OWASP Cheat Sheet: Cryptographic Storage](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cryptographic_Storage_Cheat_Sheet.md)
+* [OWASP Testing Guide 4.0: Testing for weak Cryptography](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README.html)
+* [OWASP Cheat Sheet: Cryptographic Storage](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
 * [FIPS 140-2](https://csrc.nist.gov/publications/detail/fips/140/2/final)
