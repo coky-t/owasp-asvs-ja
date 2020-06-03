@@ -16,9 +16,9 @@
 | :---: | :--- | :---: | :---:| :---: | :---: |
 | **4.1.1** | 特にクライアント側のアクセス制御が存在し、それが回避される可能性がある場合には、アプリケーションは信頼できるサービス層に対してアクセス制御規則を適用することを検証します。 | ✓ | ✓ | ✓ | 602 |
 | **4.1.2** | アクセス制御で使用されるすべてのユーザー属性とデータ属性およびポリシー情報は、特に認可されていない限りエンドユーザーが操作できないことを検証します。 | ✓ | ✓ | ✓ | 639 |
-| **4.1.3** | 最小特権の原則が存在することを検証します。ユーザーは特定の権限を持つ機能、データファイル、URL、コントローラ、サービス、およびその他のリソースにのみアクセスできるようにすべきです。これはなりすましや特権昇格に対する保護を意味します。 ([C7](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ |  285 |
-| **4.1.4** | デフォルト拒否の原則が存在することを検証します。これにより新規のユーザーやロールは最小限の権限または権限なしで開始し、アクセスが明示的に割り当てられるまで新しい機能へのアクセスを受け取りません。 ([C7](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ |  276 |
-| **4.1.5** | 例外が発生した場合も含めて、アクセス制御がセキュアに失敗することを検証します。 ([C10](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ |  285 |
+| **4.1.3** | 最小特権の原則が存在することを検証します。ユーザーは特定の権限を持つ機能、データファイル、URL、コントローラ、サービス、およびその他のリソースにのみアクセスできるようにすべきです。これはなりすましや特権昇格に対する保護を意味します。 ([C7](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ |  285 |
+| **4.1.4** | デフォルト拒否の原則が存在することを検証します。これにより新規のユーザーやロールは最小限の権限または権限なしで開始し、アクセスが明示的に割り当てられるまで新しい機能へのアクセスを受け取りません。 ([C7](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ |  276 |
+| **4.1.5** | 例外が発生した場合も含めて、アクセス制御がセキュアに失敗することを検証します。 ([C10](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ |  285 |
 
 ## V4.2 操作レベルのアクセス制御
 
@@ -39,7 +39,7 @@
 
 詳細については、以下も参照してください。
 
-* [OWASP Testing Guide 4.0: Authorization](https://www.owasp.org/index.php/Testing_for_Authorization)
-* [OWASP Cheat Sheet: Access Control](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Access_Control_Cheat_Sheet.md)
-* [OWASP CSRF Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md)
-* [OWASP REST Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/REST_Security_Cheat_Sheet.md)
+* [OWASP Testing Guide 4.0: Authorization](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/05-Authorization_Testing/README.html)
+* [OWASP Cheat Sheet: Access Control](https://cheatsheetseries.owasp.org/cheatsheets/Access_Control_Cheat_Sheet.html)
+* [OWASP CSRF Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+* [OWASP REST Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
