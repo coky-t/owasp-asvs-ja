@@ -20,14 +20,14 @@
 | **11.1.4** | アプリケーションはデータ流出、過剰なビジネスロジックリクエスト、過度のファイルアップロード、サービス拒否攻撃に対して検出および防御するための十分な自動化防止コントロールがあることを検証します。 | ✓ | ✓ | ✓ | 770 |
 | **11.1.5** | アプリケーションは、脅威モデリングや同様の方法論を用いて特定された、起こりうるビジネスリスクや脅威から保護するためにビジネスロジック制限や妥当性確認があることを検証します。 | ✓ | ✓ | ✓ | 841 |
 | **11.1.6** | アプリケーションは機密性の高い操作に対する "time of check to time of use" (TOCTOU) 問題やその他の競合状態を被っていないことを検証します。 | | ✓ | ✓ | 367 |
-| **11.1.7** | アプリケーションはビジネスロジックの観点から異常なイベントやアクティビティを監視していることを検証します。例えば、順序の異なるアクションや通常のユーザーが決して行わないアクションを実行しようと試みます。 ([C9](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | | ✓ | ✓ | 754 |
+| **11.1.7** | アプリケーションはビジネスロジックの観点から異常なイベントやアクティビティを監視していることを検証します。例えば、順序の異なるアクションや通常のユーザーが決して行わないアクションを実行しようと試みます。 ([C9](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 754 |
 | **11.1.8** | アプリケーションは自動化された攻撃や異常なアクティビティが検出されたときに設定可能なアラートを発していることを検証します。 | | ✓ | ✓ | 390 |
 
 ## 参考情報
 
 詳細については、以下も参照してください。
 
-* [OWASP Testing Guide 4.0: Business Logic Testing](https://www.owasp.org/index.php/Testing_for_business_logic)
-* [OWASP AppSensor](https://www.owasp.org/index.php/OWASP_AppSensor_Project) や [OWASP Automated Threats to Web Applications](https://www.owasp.org/index.php/OWASP_Automated_Threats_to_Web_Applications) の使用を含め、自動化対策はさまざまな方法で実現できます。
-* [OWASP AppSensor](https://www.owasp.org/index.php/OWASP_AppSensor_Project) は攻撃検出と対応にも役立ちます。
-* [OWASP Cornucopia](https://www.owasp.org/index.php/OWASP_Cornucopia)
+* [OWASP Testing Guide 4.0: Business Logic Testing](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/10-Business_Logic_Testing/README.html)
+* [OWASP AppSensor](https://github.com/jtmelton/appsensor) や [OWASP Automated Threats to Web Applications](https://owasp.org/www-project-automated-threats-to-web-applications/) の使用を含め、自動化対策はさまざまな方法で実現できます。
+* [OWASP AppSensor](https://github.com/jtmelton/appsensor) は攻撃検出と対応にも役立ちます。
+* [OWASP Cornucopia](https://owasp.org/www-project-cornucopia/)
