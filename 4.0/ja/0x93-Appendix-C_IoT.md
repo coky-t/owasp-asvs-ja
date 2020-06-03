@@ -1,6 +1,6 @@
 # 付録 C: Internet of Things 検証要件
 
-このセクションはもともとメインブランチにありましたが、OWASP IoT チームが行った成果があり、この主題に関して二つの異なる脅威を維持することは意味がありません。4.0 リリースでは、これを付録に移動し、これを必要とするすべての人には、むしろメインの [OWASP IoT プロジェクト](https://www.owasp.org/index.php/OWASP_Internet_of_Things_Project) を使用するように強く要請します。
+このセクションはもともとメインブランチにありましたが、OWASP IoT チームが行った成果があり、この主題に関して二つの異なる脅威を維持することは意味がありません。4.0 リリースでは、これを付録に移動し、これを必要とするすべての人には、むしろメインの [OWASP IoT プロジェクト](https://owasp.org/www-project-internet-of-things/) を使用するように強く要請します。
 
 ## 管理目標
 
@@ -53,7 +53,7 @@
 
 詳細については、以下も参照してください。
 
-* [OWASP Internet of Things Top 10](https://www.owasp.org/images/7/71/Internet_of_Things_Top_Ten_2014-OWASP.pdf)
-* [OWASP Embedded Application Security Project](https://www.owasp.org/index.php/OWASP_Embedded_Application_Security)
-* [OWASP Internet of Things Project](https://www.owasp.org/index.php/OWASP_Internet_of_Things_Project)
+* [OWASP Internet of Things Top 10](https://owasp.org/www-pdf-archive/OWASP-IoT-Top-10-2018-final.pdf)
+* [OWASP Embedded Application Security Project](https://owasp.org/www-project-embedded-application-security/)
+* [OWASP Internet of Things Project](https://owasp.org/www-project-internet-of-things/)
 * [Trudy TCP Proxy Tool](https://github.com/praetorian-inc/trudy)
