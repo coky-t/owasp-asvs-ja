@@ -28,7 +28,7 @@
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
 | **8.2.1** | 機密データが現代のブラウザでキャッシュされないように、アプリケーションは十分なキャッシュ防止ヘッダを設定していることを検証します。 | ✓ | ✓ | ✓ | 525 |
-| **8.2.2** | クライアント側ストレージ (HTML5 ローカルストレージ、セッションストレージ、IndexedDB、通常の Cookie、Flash Cookie など) に保存されているデータに機密データや PII (個人識別情報) が含まれていないことを検証します。 | ✓ | ✓ | ✓ | 922 |
+| **8.2.2** | クライアント側ストレージ (HTML5 ローカルストレージ、セッションストレージ、IndexedDB、Cookie など) に保存されているデータに機密データや PII (個人識別情報) が含まれていないことを検証します。 | ✓ | ✓ | ✓ | 922 |
 | **8.2.3** | クライアントやセッションが終了した後、ブラウザ DOM などのクライアントストレージから認証データがクリアされることを検証します。 | ✓ | ✓ | ✓ | 922 |
 
 ## V8.3 機密性の高い個人データ
@@ -44,10 +44,10 @@
 | **8.3.1** | 機密データが HTTP メッセージボディまたはヘッダでサーバーに送信され、HTTP verb のクエリ文字列パラメータには機密データが含まれていないことを検証します。 | ✓ | ✓ | ✓ | 319 |
 | **8.3.2** | ユーザーが自分のデータをオンデマンドで削除またはエクスポートする方法を持っていることを検証します。 | ✓ | ✓ | ✓ | 212 |
 | **8.3.3** | 提供された個人情報の収集および使用に関して明確な表現でユーザーに提供されていること、およびそれが何らかの方法で使用される前にユーザーが提供されたオプトインでそのデータの使用に同意をしていることを検証します。 | ✓ | ✓ | ✓ | 285 |
-| **8.3.4** | アプリケーションにより作成および処理されるすべての機密データを特定していることを検証し、機密データを処理する方法に関するポリシーが整っていることを確認します。 ([C8](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 200 |
+| **8.3.4** | アプリケーションにより作成および処理されるすべての機密データを特定していることを検証し、機密データを処理する方法に関するポリシーが整っていることを確認します。 ([C8](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 200 |
 | **8.3.5** | データが関連するデータ保護規制の下で収集されている場合やアクセスのログ記録が必要な場合には、機密データへのアクセスが (機密データ自体がログ記録されることなく) 監査されていることを検証します。 |  | ✓ | ✓ | 532 |
 | **8.3.6** | メモリダンプ攻撃を軽減するために、メモリに保持された機密情報は不要になればすぐにゼロまたはランダムデータを使用して上書きされることを検証します。 |  | ✓ | ✓ | 226 |
-| **8.3.7** | 暗号化を必要とする機密情報や個人情報は、機密性と完全性の両方を提供する承認済みアルゴリズムを使用して暗号化されていることを検証します。 ([C8](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) |  | ✓ | ✓ | 327 |
+| **8.3.7** | 暗号化を必要とする機密情報や個人情報は、機密性と完全性の両方を提供する承認済みアルゴリズムを使用して暗号化されていることを検証します。 ([C8](https://owasp.org/www-project-proactive-controls/#div-numbering)) |  | ✓ | ✓ | 327 |
 | **8.3.8** | 機密性の高い個人情報は、古いデータや期限切れのデータが自動的、定期的、または状況に応じて削除される、データ保持分類の対象となっていることを検証します。 |  | ✓ | ✓ | 285 |
 
 データ保護を検討する際には、主に一括抽出、一括変更、過度の使用について考慮すべきです。例えば、多くのソーシャルメディアシステムではユーザーは1日に新しい友人を100人しか追加できませんが、これらの要求がどのシステムから来たのかは重要ではありません。銀行のプラットフォームでは、1000ユーロを超える資金を外部の機関に転送することは、1時間当たり5つの取引まででブロックすることが期待されています。各システムの要件は大きく異なることがあるため、「異常」を判断するには脅威モデルとビジネスリスクを考慮する必要があります。重要な基準はそのような異常な大量アクションを検出、阻止、または可能であればブロックする能力です。
@@ -57,8 +57,8 @@
 詳細については、以下も参照してください。
 
 * [Consider using Security Headers website to check security and anti-caching headers](https://securityheaders.io)
-* [OWASP Secure Headers project](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project)
-* [OWASP Privacy Risks Project](https://www.owasp.org/index.php/OWASP_Top_10_Privacy_Risks_Project)
-* [OWASP User Privacy Protection Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/User_Privacy_Protection_Cheat_Sheet.md)
+* [OWASP Secure Headers project](https://owasp.org/www-project-secure-headers/)
+* [OWASP Privacy Risks Project](https://owasp.org/www-project-top-10-privacy-risks/)
+* [OWASP User Privacy Protection Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/User_Privacy_Protection_Cheat_Sheet.html)
 * [European Union General Data Protection Regulation (GDPR) overview](https://edps.europa.eu/data-protection_en)
 * [European Union Data Protection Supervisor - Internet Privacy Engineering Network](https://edps.europa.eu/data-protection/ipen-internet-privacy-engineering-network_en)
