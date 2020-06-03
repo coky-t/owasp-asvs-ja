@@ -40,15 +40,15 @@ NIST 800-63 により「記憶された秘密」と呼ばれるパスワード�
 
 | # | 説明 | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **2.1.1** | ユーザーが設定するパスワードの長さは少なくとも 12 文字であることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
-| **2.1.2** | 64 文字以上のパスワードが許可されていることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
-| **2.1.3** | パスワードの切り捨てが行われていないことを検証します。ただし、連続する複数のスペースは単一のスペースに置き換えることができます。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
+| **2.1.1** | ユーザーが設定するパスワードの長さは少なくとも 12 文字であることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
+| **2.1.2** | 64 文字以上のパスワードが許可されていることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
+| **2.1.3** | パスワードの切り捨てが行われていないことを検証します。ただし、連続する複数のスペースは単一のスペースに置き換えることができます。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
 | **2.1.4** | スペースや絵文字などの言語ニュートラルな文字を含む、印字可能な Unicode 文字がパスワードで許可されていることを検証します。 | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
 | **2.1.5** | ユーザーがパスワードを変更できることを検証します。 | ✓ | ✓ | ✓ | 620 | 5.1.1.2 |
 | **2.1.6** | パスワード変更機能にはユーザーの現在のパスワードと新しいパスワードが必要であることを検証します。 | ✓ | ✓ | ✓ | 620 | 5.1.1.2 |
-| **2.1.7** | アカウント登録、ログイン、パスワード変更時に送信されるパスワードがローカル (システムのパスワードポリシーに一致する上位 1,000 または 10,000 の最も一般的なパスワードなど) または外部 API を使用した一連の流出済みパスワードと照合することを検証します。API を使用する場合には、パスワードの流出状況の検証に平文パスワードが送信または使用されないように、ゼロ知識証明またはその他のメカニズムを使用する必要があります。パスワードが流出している場合、アプリケーションはユーザーに新しい未流出パスワードの設定を要求しなければなりません。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
+| **2.1.7** | アカウント登録、ログイン、パスワード変更時に送信されるパスワードがローカル (システムのパスワードポリシーに一致する上位 1,000 または 10,000 の最も一般的なパスワードなど) または外部 API を使用した一連の流出済みパスワードと照合することを検証します。API を使用する場合には、パスワードの流出状況の検証に平文パスワードが送信または使用されないように、ゼロ知識証明またはその他のメカニズムを使用する必要があります。パスワードが流出している場合、アプリケーションはユーザーに新しい未流出パスワードの設定を要求しなければなりません。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
 | **2.1.8** | ユーザーがより強力なパスワードを設定できるように、パスワード強度メーターが提供されていることを検証します。 | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
-| **2.1.9** | 許可される文字の種類を制限するパスワード構成規則がないことを検証します。大文字、小文字、数字、または特殊文字を要求すべきではありません。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
+| **2.1.9** | 許可される文字の種類を制限するパスワード構成規則がないことを検証します。大文字、小文字、数字、または特殊文字を要求すべきではありません。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
 | **2.1.10** | 定期的な資格情報のローテーションやパスワード履歴の要件がないことを検証します。 | ✓ | ✓ | ✓ | 263 | 5.1.1.2 |
 | **2.1.11** | 「貼り付け」機能、ブラウザパスワードヘルパー、および外部のパスワードマネージャが許可されていることを検証します。 | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
 | **2.1.12** | ユーザーがマスクされたパスワード全体を一時的に表示するか、ネイティブ機能としてこれを持たないプラットフォームでパスワードの最後に入力された文字を一時的に表示するかを選択できることを検証します。 | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
@@ -93,10 +93,10 @@ NIST は電子メールや SMS を [「制限された」認証子タイプ ("re
 
 | # | 説明 | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **2.4.1** | パスワードがオフライン攻撃に耐える形式で保存されていることを検証します。パスワードは承認された一方向鍵生成またはパスワードハッシュ関数を使用してソルトおよびハッシュされているべきです。鍵生成およびパスワードハッシュ関数はパスワードハッシュを生成するときに入力としてパスワード、ソルト、およびコストファクターを受け取ります。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | | ✓ | ✓ | 916 | 5.1.1.2 |
-| **2.4.2** | ソルトは少なくとも32ビットの長さがあり、格納されたハッシュ間のソルト値の衝突を最小限にするために任意に選択されていることを検証します。資格情報ごとに、一意のソルト値と結果のハッシュが保存されているべきです。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | | ✓ | ✓ | 916 | 5.1.1.2 |
-| **2.4.3** | PBKDF2 が使用されている場合、イテレーションカウントは検証サーバーのパフォーマンスが許す限り大きくすべきであり、通常は少なくとも 100,000 イテレーションであることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | | ✓ | ✓ | 916 | 5.1.1.2 |
-| **2.4.4** | bcrypt が使用されている場合、ワークファクターは検証サーバーのパフォーマンスが許す限り大きくすべきであり、通常は少なくとも 13 であることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | | ✓ | ✓ | 916 | 5.1.1.2 |
+| **2.4.1** | パスワードがオフライン攻撃に耐える形式で保存されていることを検証します。パスワードは承認された一方向鍵生成またはパスワードハッシュ関数を使用してソルトおよびハッシュされているべきです。鍵生成およびパスワードハッシュ関数はパスワードハッシュを生成するときに入力としてパスワード、ソルト、およびコストファクターを受け取ります。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 916 | 5.1.1.2 |
+| **2.4.2** | ソルトは少なくとも32ビットの長さがあり、格納されたハッシュ間のソルト値の衝突を最小限にするために任意に選択されていることを検証します。資格情報ごとに、一意のソルト値と結果のハッシュが保存されているべきです。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 916 | 5.1.1.2 |
+| **2.4.3** | PBKDF2 が使用されている場合、イテレーションカウントは検証サーバーのパフォーマンスが許す限り大きくすべきであり、通常は少なくとも 100,000 イテレーションであることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 916 | 5.1.1.2 |
+| **2.4.4** | bcrypt が使用されている場合、ワークファクターは検証サーバーのパフォーマンスが許す限り大きくすべきであり、通常は少なくとも 13 であることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 916 | 5.1.1.2 |
 | **2.4.5** | 秘密であり検証者のみが知っているソルト値を使用して、鍵生成関数の追加のイテレーションが実行されることを検証します。承認された乱数ビット生成器 [SP 800-90Ar1] を使用してソルト値を生成し、少なくとも SP 800-131A の最新リビジョンで指定されている最小セキュリティ強度を提供します。秘密のソルト値はハッシュされたパスワードとは別に (例えば、ハードウェアセキュリティモジュールのような専用デバイスに) 保存すべきです。 |  | ✓ | ✓ | 916 | 5.1.1.2 |
 
 米国標準が言及されている場合、必要に応じて米国標準の代わりに、またはそれに加えて、地域またはローカルの標準を使用できます。
@@ -105,12 +105,12 @@ NIST は電子メールや SMS を [「制限された」認証子タイプ ("re
 
 | # | 説明 | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **2.5.1** | システムが生成した初期アクティベーションまたはリカバリーシークレットがユーザーに送信されている場合、それはシングルユースであり、時間制限があり、ランダムであることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 640 | 5.1.1.2 |
+| **2.5.1** | システムが生成した初期アクティベーションまたはリカバリーシークレットがユーザーに送信されている場合、それはシングルユースであり、時間制限があり、ランダムであることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 640 | 5.1.1.2 |
 | **2.5.2** | パスワードのヒントまたは知識ベースの認証 (いわゆる「秘密の質問」) が存在しないことを検証します。 | ✓ | ✓ | ✓ | 640 | 5.1.1.2 |
-| **2.5.3** | パスワード資格情報リカバリーは決して現在のパスワードを明らかにしないことを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 640 | 5.1.1.2 |
+| **2.5.3** | パスワード資格情報リカバリーは決して現在のパスワードを明らかにしないことを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 640 | 5.1.1.2 |
 | **2.5.4** | 共有アカウントまたはデフォルトアカウントが存在しないことを検証します (例 "root", "admin", "sa") 。 | ✓ | ✓ | ✓ | 16 | 5.1.1.2 / A.3 |
 | **2.5.5** | 認証要素が変更または置換された場合、ユーザーにこのイベントが通知されることを検証します。 | ✓ | ✓ | ✓ | 304 | 6.1.2.3 |
-| **2.5.6** | パスワードを忘れた場合、他のリカバリーパスは TOTP またはその他のソフトトークン、モバイルパス、または別のオフラインリカバリーメカニズムなどのセキュアなリカバリーメカニズムを使用することを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 640 | 5.1.1.2 |
+| **2.5.6** | パスワードを忘れた場合、他のリカバリーパスは TOTP またはその他のソフトトークン、モバイルパス、または別のオフラインリカバリーメカニズムなどのセキュアなリカバリーメカニズムを使用することを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 640 | 5.1.1.2 |
 | **2.5.7** | OTP または多要素認証要素が失われた場合、登録時と同じレベルで同一性証明の証拠が実行されることを検証します。 |  | ✓ | ✓ | 308 | 6.1.2.3 |
 
 ## V2.6 Look-up Secret Verifier 要件
@@ -205,7 +205,7 @@ ASVS はプッシュ通知などの新たな帯域外認証子を開発する開
 * [NIST 800-63 B - Authentication and Lifecycle Management](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf)
 * [NIST 800-63 C - Federation and Assertions](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63c.pdf)
 * [NIST 800-63 FAQ](https://pages.nist.gov/800-63-FAQ/)
-* [OWASP Testing Guide 4.0: Testing for Authentication](https://www.owasp.org/index.php/Testing_for_authentication)
-* [OWASP Cheat Sheet - Password storage](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Password_Storage_Cheat_Sheet.md)
-* [OWASP Cheat Sheet - Forgot password](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Forgot_Password_Cheat_Sheet.md)
-* [OWASP Cheat Sheet - Choosing and using security questions](https://www.owasp.org/index.php/Choosing_and_Using_Security_Questions_Cheat_Sheet)
+* [OWASP Testing Guide 4.0: Testing for Authentication](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/04-Authentication_Testing/README.html)
+* [OWASP Cheat Sheet - Password storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
+* [OWASP Cheat Sheet - Forgot password](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html)
+* [OWASP Cheat Sheet - Choosing and using security questions](https://cheatsheetseries.owasp.org/cheatsheets/Choosing_and_Using_Security_Questions_Cheat_Sheet.html)

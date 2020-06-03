@@ -17,9 +17,9 @@
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
-| **9.1.1** | セキュアな TLS がすべてのクライアント接続に使用されており、セキュアではないプロトコルや暗号化されていないプロトコルにフォールバックしないことを検証します。 ([C8](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 319 |
-| **9.1.2** | オンラインまたは最新の TLS テストツールを使用して、強力なアルゴリズム、暗号、プロトコルのみが有効であり、最も強力なアルゴリズムおよび暗号が優先的に設定されていることを検証します。 | ✓ | ✓ | ✓ | 326 |
-| **9.1.3** | SSLv2, SSLv3, TLS 1.0, TLS 1.1 など、古いバージョンの SSL と TLS プロトコル、アルゴリズム、暗号、構成が無効であることを検証します。最新バージョンの TLS が優先暗号スイートであるべきです。 | ✓ | ✓ | ✓ | 326 |
+| **9.1.1** | TLS がすべてのクライアント接続に使用されており、セキュアではない通信や暗号化されていない通信にフォールバックしないことを検証します。 ([C8](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 319 |
+| **9.1.2** | オンラインまたは最新の TLS テストツールを使用して、強力な暗号スイートのみが有効であり、最も強力な暗号スイートが優先的に設定されていることを検証します。 | ✓ | ✓ | ✓ | 326 |
+| **9.1.3** | TLS 1.2 や TLS 1.3 など、最新の推奨バージョンの TLS プロトコルのみが有効であることを検証します。最新バージョンの TLS プロトコルが優先オプションであるべきです。 | ✓ | ✓ | ✓ | 326 |
 | **9.1.4** | シッククライアントアプリケーションの場合、アプリが独自の証明書ストアを使用するか、エンドポイント証明書または公開鍵をピン留めするかしており、信頼できる CA により署名されていたとしても、異なる証明書や鍵を提供するエンドポイントとの接続を確立しないことを検証します。 |   |   | ✓ | 295 |
 
 ## V9.2 サーバー通信セキュリティ要件
@@ -38,6 +38,6 @@
 
 詳細については、以下も参照してください。
 
-*  [OWASP – TLS Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.md)
+*  [OWASP – TLS Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html)
 *  [OWASP - Pinning Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Pinning_Cheat_Sheet.html)
 * 「TLS の承認されたモード」に関する注意。これまで ASVS は米国規格 FIPS 140-2 を参照していましたが、グローバル規格として US 規格の適用は困難、矛盾、混乱の可能性があります。9.1.3 に準拠するより良い方法は[Mozilla の Server Side TLS](https://wiki.mozilla.org/Security/Server_Side_TLS) や [既知の良い構成を生成する](https://mozilla.github.io/server-side-tls/ssl-config-generator/) などのガイドを見直し、望ましいセキュリティレベルを得るためにsslyze などの既知の TLS 評価ツール、さまざまな脆弱性スキャナ、信頼できる TLS オンライン評価サービスを使用することです。一般的に、期限切れの暗号やセキュアではない暗号の使用、Perfect Forward Secrecy の欠如、期限切れの SSL プロトコルやセキュアではない SSL プロトコル、脆弱な優先暗号などがこのセクションでの不適合となります。

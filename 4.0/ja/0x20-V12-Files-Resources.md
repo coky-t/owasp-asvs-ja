@@ -29,7 +29,7 @@ zip 爆弾はペネトレーションテスト技法を使用して大いにテ�
 | :---: | :--- | :---: | :---:| :---: | :---: |
 | **12.3.1** | パストラバーサルから保護するために、ユーザーが送信したファイル名メタデータがシステムやフレームワークファイルにより直接使用されていないこと、および URL API が使用されていることを検証します。 | ✓ | ✓ | ✓ | 22 |
 | **12.3.2** | ローカルファイルの開示、作成、更新、削除 (LFI) を防ぐために、ユーザーが送信したファイル名メタデータが確認または無視されていることを検証します。 | ✓ | ✓ | ✓ | 73 |
-| **12.3.3** | SSRF につながる可能性もあるリモートファイルの開示や実行 (RFI) を防ぐために、ユーザーが送信したファイル名メタデータが確認または無視されていることを検証します。 | ✓ | ✓ | ✓ | 98 |
+| **12.3.3** | リモートファイルインクルージョン (RFI) やサーバーサイドリクエストフォージェリ (SSRF) によるリモートファイルの開示や実行を防ぐために、ユーザーが送信したファイル名メタデータが確認または無視されていることを検証します。 | ✓ | ✓ | ✓ | 98 |
 | **12.3.4** | JSON, JSONP, URL パラメータでユーザーが送信したファイル名を確認または無視することにより、アプリケーションが Reflective File Download (RFD) に対して保護していることを検証します。レスポンスの Content-Type ヘッダは text/plain に設定し、Content-Disposition は固定ファイル名であるべきです。 | ✓ | ✓ | ✓ | 641 |
 | **12.3.5** | OS コマンドインジェクションから保護するために、信頼できないファイルメタデータがシステム API やライブラリで直接使用されていないことを検証します。 | ✓ | ✓ | ✓ | 78 |
 | **12.3.6** | 未検証のコンテンツ配信ネットワーク、JavaScript ライブラリ、node npm ライブラリ、サーバーサイド DLL など、信頼できないソースからの機能がアプリケーションに含まれて実行されていないことを検証します。 |  | ✓ | ✓ | 829 |
@@ -52,12 +52,12 @@ zip 爆弾はペネトレーションテスト技法を使用して大いにテ�
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
-| **12.6.1** | ウェブサーバーまたはアプリケーションサーバーが、サーバーが要求を送信したりデータやファイルをロードしたりできるリソースやシステムのホワイトリストで構成されていることを検証します。 | ✓ | ✓ | ✓ | 918 |
+| **12.6.1** | ウェブサーバーまたはアプリケーションサーバーが、サーバーが要求を送信したりデータやファイルをロードしたりできるリソースやシステムの許可リストで構成されていることを検証します。 | ✓ | ✓ | ✓ | 918 |
 
 ## 参考情報
 
 詳細については、以下も参照してください。
 
-* [File Extension Handling for Sensitive Information](https://www.owasp.org/index.php/Unrestricted_File_Upload)
+* [File Extension Handling for Sensitive Information](https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload)
 * [Reflective file download by Oren Hafif](https://www.trustwave.com/Resources/SpiderLabs-Blog/Reflected-File-Download---A-New-Web-Attack-Vector/)
 * [OWASP Third Party JavaScript Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Third_Party_Javascript_Management_Cheat_Sheet.html)

@@ -14,26 +14,26 @@
 
 ## V5.1 入力妥当性確認要件
 
-ポジティブホワイトリストと強いデータ型付けを使用して、入力妥当性確認コントロールを正しく実装すると、すべてのインジェクション攻撃の 90% 以上を排除できます。長さと範囲のチェックはこれをさらに減らすことができます。アプリケーションアーキテクチャ、デザインスプリント、コーディング、ユニットテスト、統合テストを通してセキュアな入力妥当性確認を構築することが求められています。これらの項目の多くはペネトレーションテストでは見つけることができませんが、それらを実装しないことの結果は V5.3 出力エンコーディングおよびインジェクション防止要件にあります。開発者およびセキュアコードレビュー担当者は、インジェクションを防ぐためにすべての項目に L1 が要求されているものとして、このセクションを扱うことをお勧めします。
+ポジティブ許可リストと強いデータ型付けを使用して、入力妥当性確認コントロールを正しく実装すると、すべてのインジェクション攻撃の 90% 以上を排除できます。長さと範囲のチェックはこれをさらに減らすことができます。アプリケーションアーキテクチャ、デザインスプリント、コーディング、ユニットテスト、統合テストを通してセキュアな入力妥当性確認を構築することが求められています。これらの項目の多くはペネトレーションテストでは見つけることができませんが、それらを実装しないことの結果は V5.3 出力エンコーディングおよびインジェクション防止要件にあります。開発者およびセキュアコードレビュー担当者は、インジェクションを防ぐためにすべての項目に L1 が要求されているものとして、このセクションを扱うことをお勧めします。
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
 | **5.1.1** | 特にアプリケーションフレームワークがリクエストパラメータ (GET, POST, cookie, ヘッダ, 環境変数) のソースについて判別していない場合、アプリケーションが HTTP パラメータ汚染攻撃を防御していることを検証します。 | ✓ | ✓ | ✓ | 235 |
-| **5.1.2** | フレームワークがマスパラメータアサインメント攻撃から保護されていること、またはフィールドにプライベートなどのマークをつけるなど、危険なパラメータアサインメントから保護するための対策がアプリケーションにあることを検証します。 ([C5](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 915 |
-| **5.1.3** | すべての入力 (HTML フォームフィールド, REST リクエスト, URL パラメータ, HTTP ヘッダ, cookie, バッチファイル, RSS フィードなど) がポジティブ妥当性確認 (ホワイトリスト) を使用して確認されていることを検証します。 ([C5](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 20 |
-| **5.1.4** | 許可された文字、長さ、パターンなど、定義されたスキーマに対して構造化データが強く型付けおよび妥当性確認されていることを検証します (例えば、クレジットカード番号や電話番号、または住所と郵便番号の一致などの二つの関連するフィールドが妥当であることの確認) 。 ([C5](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 20 |
-| **5.1.5** | URL リダイレクトおよびフォワードがホワイトリストに登録された宛先のみを許可すること、または潜在的に信頼できないコンテンツにリダイレクトするときに警告を表示することを検証します。 | ✓ | ✓ | ✓ | 601 |
+| **5.1.2** | フレームワークがマスパラメータアサインメント攻撃から保護されていること、またはフィールドにプライベートなどのマークをつけるなど、危険なパラメータアサインメントから保護するための対策がアプリケーションにあることを検証します。 ([C5](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 915 |
+| **5.1.3** | すべての入力 (HTML フォームフィールド, REST リクエスト, URL パラメータ, HTTP ヘッダ, cookie, バッチファイル, RSS フィードなど) がポジティブ妥当性確認 (許可リスト) を使用して確認されていることを検証します。 ([C5](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 20 |
+| **5.1.4** | 許可された文字、長さ、パターンなど、定義されたスキーマに対して構造化データが強く型付けおよび妥当性確認されていることを検証します (例えば、クレジットカード番号や電話番号、または住所と郵便番号の一致などの二つの関連するフィールドが妥当であることの確認) 。 ([C5](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 20 |
+| **5.1.5** | URL リダイレクトおよびフォワードが許可リストに登録された宛先のみを許可すること、または潜在的に信頼できないコンテンツにリダイレクトするときに警告を表示することを検証します。 | ✓ | ✓ | ✓ | 601 |
 
 ## V5.2 サニタイズおよびサンドボックス要件
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
-| **5.2.1** | WYSIWYG エディタなどからの信頼できない HTML 入力はすべて、HTML サニタイザーライブラリまたはフレームワーク機能で適切にサニタイズされていることを検証します。 ([C5](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 116 |
+| **5.2.1** | WYSIWYG エディタなどからの信頼できない HTML 入力はすべて、HTML サニタイザーライブラリまたはフレームワーク機能で適切にサニタイズされていることを検証します。 ([C5](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 116 |
 | **5.2.2** | 許可されている文字や長さなどの安全対策を強化するために、非構造化データがサニタイズされていることを検証します。 | ✓ | ✓ | ✓ | 138 |
 | **5.2.3** | SMTP インジェクションや IMAP インジェクションから保護するため、ユーザー入力をメールシステムに渡す前にアプリケーションがサニタイズしていることを検証します。 | ✓ | ✓ | ✓ | 147 |
 | **5.2.4** | アプリケーションが eval() や他の動的コード実行機能の使用を回避していることを検証します。代替手段がない場合には、含まれているユーザー入力を実行する前にサニタイズまたはサンドボックス化する必要があります。 | ✓ | ✓ | ✓ | 95 |
 | **5.2.5** | 含まれているユーザー入力がサニタイズまたはサンドボックス化されていることを確認して、アプリケーションがテンプレートインジェクション攻撃から保護していることを検証します。 | ✓ | ✓ | ✓ | 94 |
-| **5.2.6** | 信頼できないデータや HTTP メタデータ (ファイル名や URL 入力フィールドなど) を妥当性確認またはサニタイズすること、プロトコル、ドメイン、パス、ポートのホワイトリストを使用することにより、アプリケーションが SSRF 攻撃から保護していることを検証します。 | ✓ | ✓ | ✓ | 918 |
+| **5.2.6** | 信頼できないデータや HTTP メタデータ (ファイル名や URL 入力フィールドなど) を妥当性確認またはサニタイズすること、プロトコル、ドメイン、パス、ポートの許可リストを使用することにより、アプリケーションが SSRF 攻撃から保護していることを検証します。 | ✓ | ✓ | ✓ | 918 |
 | **5.2.7** | アプリケーションはユーザーが提供する Scalable Vector Graphics (SVG) スクリプト可能コンテンツ、特にインラインスクリプトによる XSS や foreignObject に関するものをサニタイズ、無効化、またはサンドボックス化することを検証します。 | ✓ | ✓ | ✓ | 159 |
 | **5.2.8** | アプリケーションは、マークダウン、CSS や XSL スタイルシート、BBCode などのユーザーが提供するスクリプト可能コンテンツまたは式テンプレート言語コンテンツをサニタイズ、無効化、またはサンドボックス化することを検証します。 | ✓ | ✓ | ✓ | 94 |
 
@@ -43,16 +43,16 @@
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
-| **5.3.1** | 出力エンコーディングは要求されているインタプリタやコンテキストに応じたものであることを検証します。例えば、具体的には HTML 値、HTML 属性、JavaScript、URL パラメータ、HTTP ヘッダ、SMTP、およびコンテキストの要求に応じて、特に信頼できない入力 (例えば、ねこ や O'Hara など、Unicode やアポストロフィを持つ名前) あどにエンコーダを使用します。 ([C4](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 116 |
-| **5.3.2** | すべての Unicode 文字ポイントが有効で安全に処理されるように、出力エンコーディングはユーザーが選択した文字セットとロケールを保持していることを検証します。 ([C4](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 176 |
-| **5.3.3** | コンテキストを意識した (できれば自動化された、あるいは最悪でも手動による) 出力エスケープが反射型 XSS、ストア型 XSS、DOM ベース XSS から保護することを検証します。 ([C4](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 79 |
-| **5.3.4** | データ選択またはデータベースクエリ (SQL, HQL, ORM, NoSQL など) がパラメータ化クエリ、ORM、エンティティフレームワークを使用していること、またはデータベースインジェクション攻撃から保護されていることを検証します。 ([C3](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 89 |
-| **5.3.5** | パラメータ化またはより安全なメカニズムが存在しない場合には、SQL インジェクションから保護するために SQL エスケープを使用するなど、インジェクション攻撃から保護するためにコンテキスト固有の出力エンコーディングが使用されていることを検証します。 ([C3, C4](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 89 |
-| **5.3.6** | eval 攻撃、リモート JavaScript インクルード、コンテンツセキュリティポリシー (CSP) バイパス、DOM XSS、および JavaScript 式評価など、アプリケーションが JavaScript または JSON インジェクション攻撃から保護することを検証します。 ([C4](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 830 |
-| **5.3.7** | アプリケーションが LDAP インジェクション脆弱性から保護すること、またはLDAP インジェクションを防ぐために特定のセキュリティコントロールが実装されていることを検証します。 ([C4](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 90 |
-| **5.3.8** | アプリケーションが OS コマンドインジェクションから保護すること、およびオペレーティングシステムがパラメータ化 OS クエリを使用するか、コンテキストに応じたコマンドライン出力エンコーディングを使用することを検証します。 ([C4](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 78 |
+| **5.3.1** | 出力エンコーディングは要求されているインタプリタやコンテキストに応じたものであることを検証します。例えば、具体的には HTML 値、HTML 属性、JavaScript、URL パラメータ、HTTP ヘッダ、SMTP、およびコンテキストの要求に応じて、特に信頼できない入力 (例えば、ねこ や O'Hara など、Unicode やアポストロフィを持つ名前) などにエンコーダを使用します。 ([C4](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 116 |
+| **5.3.2** | すべての Unicode 文字ポイントが有効で安全に処理されるように、出力エンコーディングはユーザーが選択した文字セットとロケールを保持していることを検証します。 ([C4](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 176 |
+| **5.3.3** | コンテキストを意識した (できれば自動化された、あるいは最悪でも手動による) 出力エスケープが反射型 XSS、ストア型 XSS、DOM ベース XSS から保護することを検証します。 ([C4](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 79 |
+| **5.3.4** | データ選択またはデータベースクエリ (SQL, HQL, ORM, NoSQL など) がパラメータ化クエリ、ORM、エンティティフレームワークを使用していること、またはデータベースインジェクション攻撃から保護されていることを検証します。 ([C3](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 89 |
+| **5.3.5** | パラメータ化またはより安全なメカニズムが存在しない場合には、SQL インジェクションから保護するために SQL エスケープを使用するなど、インジェクション攻撃から保護するためにコンテキスト固有の出力エンコーディングが使用されていることを検証します。 ([C3, C4](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 89 |
+| **5.3.6** | eval 攻撃、リモート JavaScript インクルード、コンテンツセキュリティポリシー (CSP) バイパス、DOM XSS、および JavaScript 式評価など、アプリケーションが JavaScript または JSON インジェクション攻撃から保護することを検証します。 ([C4](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 830 |
+| **5.3.7** | アプリケーションが LDAP インジェクション脆弱性から保護すること、またはLDAP インジェクションを防ぐために特定のセキュリティコントロールが実装されていることを検証します。 ([C4](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 90 |
+| **5.3.8** | アプリケーションが OS コマンドインジェクションから保護すること、およびオペレーティングシステムがパラメータ化 OS クエリを使用するか、コンテキストに応じたコマンドライン出力エンコーディングを使用することを検証します。 ([C4](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 78 |
 | **5.3.9** | アプリケーションがローカルファイルインクルージョン (LFI) やリモートファイルインクルージョン (RFI) 攻撃から保護することを検証します。 | ✓ | ✓ | ✓ | 829 |
-| **5.3.10** | アプリケーションが XPath インジェクションや XML インジェクション攻撃から保護することを検証します。 ([C4](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 643 |
+| **5.3.10** | アプリケーションが XPath インジェクションや XML インジェクション攻撃から保護することを検証します。 ([C4](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 643 |
 
 注意: パラメータ化クエリや SQL エスケープの使用は必ずしも十分ではありません。テーブル名や列名、ORDER BY などはエスケープできません。これらのフィールドにエスケープされたユーザー指定データを含めると、クエリの失敗または SQL インジェクションを引き起こします。
 
@@ -72,8 +72,8 @@
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
-| **5.5.1** | 悪意のあるオブジェクト生成やデータ改竄を防ぐために、シリアル化オブジェクトが整合性チェックを使用しているか、暗号化されていることを検証します。 ([C5](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 502 |
-| **5.5.2** | アプリケーションが XML パーサーを最も制限の厳しい構成のみを使用するよう適切に制限し、XXE を防止するために外部エンティティの解決などの危険な機能を無効にすることを検証します。 | ✓ | ✓ | ✓ | 611 |
+| **5.5.1** | 悪意のあるオブジェクト生成やデータ改竄を防ぐために、シリアル化オブジェクトが整合性チェックを使用しているか、暗号化されていることを検証します。 ([C5](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 502 |
+| **5.5.2** | アプリケーションが XML パーサーを最も制限の厳しい構成のみを使用するよう適切に制限し、XML 外部エンティティ (XML eXternal Entity, XXE) 攻撃を防止するために外部エンティティの解決などの危険な機能を無効にすることを検証します。 | ✓ | ✓ | ✓ | 611 |
 | **5.5.3** | 信頼できないデータの逆シリアル化が回避されていること、またはカスタムコードとサードパーティライブラリ (JSON, XML および YAML パーサーなど) の両方で保護されていることを検証します。 | ✓ | ✓ | ✓ | 502 |
 | **5.5.4** | ブラウザまたは JavaScript ベースのバックエンドで JSON をパースする場合には、JSON ドキュメントのパースに JSON.parse が使用されていることを検証します。JSON のパースに eval() を使用してはいけません。 | ✓ | ✓ | ✓ | 95 |
 
@@ -81,17 +81,17 @@
 
 詳細については、以下も参照してください。
 
-* [OWASP Testing Guide 4.0: Input Validation Testing](https://www.owasp.org/index.php/Testing_for_Input_Validation)
-* [OWASP Cheat Sheet: Input Validation](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Input_Validation_Cheat_Sheet.md)
-* [OWASP Testing Guide 4.0: Testing for HTTP Parameter Pollution](https://www.owasp.org/index.php/Testing_for_HTTP_Parameter_pollution_%28OTG-INPVAL-004%29)
-* [OWASP LDAP Injection Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md)
-* [OWASP Testing Guide 4.0: Client Side Testing](https://www.owasp.org/index.php/Client_Side_Testing)
-* [OWASP Cross Site Scripting Prevention Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md)
-* [OWASP DOM Based Cross Site Scripting Prevention Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.md)
-* [OWASP Java Encoding Project](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project)
-* [OWASP Mass Assignment Prevention Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Mass_Assignment_Cheat_Sheet.md)
+* [OWASP Testing Guide 4.0: Input Validation Testing](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/README.html)
+* [OWASP Cheat Sheet: Input Validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
+* [OWASP Testing Guide 4.0: Testing for HTTP Parameter Pollution](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/04-Testing_for_HTTP_Parameter_Pollution.html)
+* [OWASP LDAP Injection Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.html)
+* [OWASP Testing Guide 4.0: Client Side Testing](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client_Side_Testing/)
+* [OWASP Cross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+* [OWASP DOM Based Cross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+* [OWASP Java Encoding Project](https://owasp.org/owasp-java-encoder/)
+* [OWASP Mass Assignment Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Mass_Assignment_Cheat_Sheet.html)
 * [DOMPurify - Client-side HTML Sanitization Library](https://github.com/cure53/DOMPurify)
-* [XML External Entity (XXE) Prevention Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.md)
+* [XML External Entity (XXE) Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)
 
 自動エスケープの詳細については、以下を参照してください。
 
@@ -105,5 +105,5 @@
 
 逆シリアル化の詳細については、以下を参照してください。
 
-* [OWASP Deserialization Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Deserialization_Cheat_Sheet.md)
-* [OWASP Deserialization of Untrusted Data Guide](https://www.owasp.org/index.php/Deserialization_of_untrusted_data)
+* [OWASP Deserialization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)
+* [OWASP Deserialization of Untrusted Data Guide](https://owasp.org/www-community/vulnerabilities/Deserialization_of_untrusted_data)

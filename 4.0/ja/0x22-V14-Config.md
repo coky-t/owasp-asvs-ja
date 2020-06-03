@@ -36,12 +36,12 @@
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | --- | --- | --- | --- | -- | -- |
-| **14.2.1** | できれば依存関係チェッカーをビルド時またはコンパイル時に使用して、すべてのコンポーネントが最新であることを検証します。 ([C2](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 1026 |
+| **14.2.1** | できれば依存関係チェッカーをビルド時またはコンパイル時に使用して、すべてのコンポーネントが最新であることを検証します。 ([C2](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 1026 |
 | **14.2.2** | サンプルアプリケーション、プラットフォームドキュメント、デフォルトユーザーやサンプルユーザーなど、すべての不要な機能、ドキュメント、サンプル、構成が削除されていることを検証します。 | ✓ | ✓ | ✓ | 1002 |
-| **14.2.3** | JavaScript ライブラリ、CSS スタイルシート、ウェブフォントなどのアプリケーション資産がコンテンツ配信ネットワーク (CDN) や外部のプロバイダで外部的にホストされている場合には、サブリソース完全性 (SRI) を使用して資産の完全性を確認していることを検証します。 | ✓ | ✓ | ✓ | 829 |
-| **14.2.4** | サードパーティコンポーネントは事前定義済みで信頼でき、継続的に保守されているリポジトリから取得していることを検証します。 ([C2](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | | ✓ | ✓ | 829 |
-| **14.2.5** | 使用しているすべてのサードパーティライブラリのインベントリカタログが保守されていることを検証します。 ([C2](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) |  | ✓ | ✓ |  |
-| **14.2.6** | アプリケーションに必要な動作のみを開示するためにサードパーティライブラリをサンドボックス化またはカプセル化することでアタックサーフェスが減少していることを検証します。 ([C2](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | | ✓ | ✓ | 265 |
+| **14.2.3** | JavaScript ライブラリ、CSS 、ウェブフォントなどのアプリケーション資産がコンテンツ配信ネットワーク (CDN) や外部のプロバイダで外部的にホストされている場合には、サブリソース完全性 (SRI) を使用して資産の完全性を確認していることを検証します。 | ✓ | ✓ | ✓ | 829 |
+| **14.2.4** | サードパーティコンポーネントは事前定義済みで信頼でき、継続的に保守されているリポジトリから取得していることを検証します。 ([C2](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 829 |
+| **14.2.5** | 使用しているすべてのサードパーティライブラリのインベントリカタログが保守されていることを検証します。 ([C2](https://owasp.org/www-project-proactive-controls/#div-numbering)) |  | ✓ | ✓ |  |
+| **14.2.6** | アプリケーションに必要な動作のみを開示するためにサードパーティライブラリをサンドボックス化またはカプセル化することでアタックサーフェスが減少していることを検証します。 ([C2](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 265 |
 
 ## V14.3 意図しないセキュリティ開示要件
 
@@ -58,12 +58,12 @@
 | # | 説明 | L1 | L2 | L3 | CWE |
 | --- | --- | --- | --- | -- | -- |
 | **14.4.1** | すべての HTTP レスポンスに Content-Type ヘッダが含まれていることを検証します。 text/*, */*+xml および application/xml コンテンツタイプは安全な文字セット (UTF-8, ISO-8859-1 など) も指定すべきです。 | ✓ | ✓ | ✓ | 173 |
-| **14.4.2** | すべての API レスポンスに Content-Disposition: attachment; filename="api.json" (またはコンテンツタイプに適したその他のファイル名) が含めれていることを検証します。 | ✓ | ✓ | ✓ | 116 |
-| **14.4.3** | HTML, DOM, JSON, JavaScript インジェクション脆弱性などの XSS 攻撃に対する影響を軽減するのに役立つコンテンツセキュリティポリシー (CSP) が設定されていることを検証します。 | ✓ | ✓ | ✓ | 1021 |
-| **14.4.4** | すべてのレスポンスに X-Content-Type-Options: nosniff が含まれていることを検証します。 | ✓ | ✓ | ✓ | 116 |
+| **14.4.2** | すべての API レスポンスに Content-Disposition: attachment; filename="api.json" ヘッダ (またはコンテンツタイプに適したその他のファイル名) が含めれていることを検証します。 | ✓ | ✓ | ✓ | 116 |
+| **14.4.3** | HTML, DOM, JSON, JavaScript インジェクション脆弱性などの XSS 攻撃に対する影響を軽減するのに役立つコンテンツセキュリティポリシー (CSP) レスポンスヘッダが設定されていることを検証します。 | ✓ | ✓ | ✓ | 1021 |
+| **14.4.4** | すべてのレスポンスに X-Content-Type-Options: nosniff ヘッダが含まれていることを検証します。 | ✓ | ✓ | ✓ | 116 |
 | **14.4.5** | Strict-Transport-Security ヘッダが、Strict-Transport-Security: max-age=15724800; includeSubdomains のように、すべてのレスポンスとすべてのサブドメインに含まれていることを検証します。 | ✓ | ✓ | ✓ | 523 |
 | **14.4.6** | "no-referrer" や "same-origin" などの、適切な "Referrer-Policy" ヘッダが含まれていることを検証します。 | ✓ | ✓ | ✓ | 116 |
-| **14.4.7** | ウェブアプリケーションのコンテンツはデフォルトでサードパーティのサイトに埋め込むことができないこと、および適切な Content-Security-Policy: frame-ancestors と X-Frame-Options ヘッダを使用して必要な場所でのみ正規のリソースの埋め込みが許可されていることを検証します。 | ✓ | ✓ | ✓ | 346 |
+| **14.4.7** | ウェブアプリケーションのコンテンツはデフォルトでサードパーティのサイトに埋め込むことができないこと、および適切な Content-Security-Policy: frame-ancestors と X-Frame-Options レスポンスヘッダを使用して必要な場所でのみ正規のリソースの埋め込みが許可されていることを検証します。 | ✓ | ✓ | ✓ | 346 |
 
 ## V14.5 HTTP リクエストヘッダ妥当性確認要件
 
@@ -78,9 +78,9 @@
 
 詳細については、以下も参照してください。
 
-* [OWASP Testing Guide 4.0: Testing for HTTP Verb Tampering]( https://www.owasp.org/index.php/Testing_for_HTTP_Verb_Tampering_%28OTG-INPVAL-003%29)
+* [OWASP Testing Guide 4.0: Testing for HTTP Verb Tampering]( https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/03-Testing_for_HTTP_Verb_Tampering.html)
 * API レスポンスに Content-Disposition を追加すると、クライアントとサーバー間の MIME タイプの理解の相違に基づく多くの攻撃を防ぐことができます。また "filename" オプションは [反射型ファイルダウンロード攻撃](https://www.blackhat.com/docs/eu-14/materials/eu-14-Hafif-Reflected-File-Download-A-New-Web-Attack-Vector.pdf) を防ぐのに役立ちます。
-* [Content Security Policy Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Content_Security_Policy_Cheat_Sheet.md)
+* [Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
 * [Exploiting CORS misconfiguration for BitCoins and Bounties](https://portswigger.net/blog/exploiting-cors-misconfigurations-for-bitcoins-and-bounties)
-* [OWASP Testing Guide 4.0: Configuration and Deployment Management Testing](https://www.owasp.org/index.php/Testing_for_configuration_management)
-* [Sandboxing third party components](https://www.owasp.org/index.php/3rd_Party_Javascript_Management_Cheat_Sheet#Sandboxing_Content)
+* [OWASP Testing Guide 4.0: Configuration and Deployment Management Testing](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/README.html)
+* [Sandboxing third party components](https://cheatsheetseries.owasp.org/cheatsheets/Third_Party_Javascript_Management_Cheat_Sheet.html#sandboxing-content)

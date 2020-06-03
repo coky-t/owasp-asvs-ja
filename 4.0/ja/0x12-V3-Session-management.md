@@ -23,10 +23,10 @@
 
 | # | 説明 | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **3.2.1** | アプリケーションがユーザー認証時に新しいセッショントークンを生成することを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 384 | 7.1 |
-| **3.2.2** | セッショントークンが少なくとも 64 ビットのエントロピーを有することを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 331 | 7.1 |
+| **3.2.1** | アプリケーションがユーザー認証時に新しいセッショントークンを生成することを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 384 | 7.1 |
+| **3.2.2** | セッショントークンが少なくとも 64 ビットのエントロピーを有することを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 331 | 7.1 |
 | **3.2.3** | 適切に保護された Cookie (セクション 3.4 を参照) や HTML 5 セッションストレージなどのセキュアな方法を使用して、アプリケーションがブラウザにセッショントークンのみを保存することを検証します。 | ✓ | ✓ | ✓ | 539 | 7.1 |
-| **3.2.4** | セッショントークンが承認済みの暗号化アルゴリズムを使用して生成されていることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) |  | ✓ | ✓ | 331 | 7.1 |
+| **3.2.4** | セッショントークンが承認済みの暗号化アルゴリズムを使用して生成されていることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) |  | ✓ | ✓ | 331 | 7.1 |
 
 TLS や他のセキュアなトランスポートチャネルはセッション管理に必須です。これは通信セキュリティの章でカバーされています。
 
@@ -38,8 +38,8 @@ TLS や他のセキュアなトランスポートチャネルはセッション�
 
 | # | 説明 | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **3.3.1** | 戻るボタンやダウンストリーム Relying Party が Relying Party を含めて認証済みセッションを再開しないように、ログアウトおよび有効期限切れがセッショントークンを無効にすることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 613 | 7.1 |
-| **3.3.2** | Authenticator がユーザーにログインしたままでいることを許可する場合には、アクティブに使用されているときとアイドル期間後の両方で定期的に再認証が行われることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | 30 日 | 12 時間または 30分の非アクティブ, 2FA はオプション | 12 時間または 15 分の非アクティブ, 2FA を要求 | 613 | 7.2 |
+| **3.3.1** | 戻るボタンやダウンストリーム Relying Party が Relying Party を含めて認証済みセッションを再開しないように、ログアウトおよび有効期限切れがセッショントークンを無効にすることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 613 | 7.1 |
+| **3.3.2** | Authenticator がユーザーにログインしたままでいることを許可する場合には、アクティブに使用されているときとアイドル期間後の両方で定期的に再認証が行われることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | 30 日 | 12 時間または 30分の非アクティブ, 2FA はオプション | 12 時間または 15 分の非アクティブ, 2FA を要求 | 613 | 7.2 |
 | **3.3.3** | パスワードが正常に変更 (パスワードリセットやリカバリーによる変更を含む) された後、アプリケーションが他のすべてのアクティブセッションを終了するためのオプションを提供していること、およびこれがアプリケーション、Federated ログイン (存在する場合) 、Relying Party すべてに有効であることを検証します。 |  | ✓ | ✓ | 613 |  |
 | **3.3.4** | ユーザーが現在アクティブなセッションおよびデバイスのいずれかまたはすべてを閲覧および (ログイン資格情報を再入力して) ログアウトできることを検証します。 |  | ✓ | ✓ | 613 | 7.1 |
 
@@ -47,11 +47,11 @@ TLS や他のセキュアなトランスポートチャネルはセッション�
 
 | # | 説明 | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **3.4.1** | Cookie ベースのセッショントークンには 'Secure' 属性が設定されていることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 614 | 7.1.1 |
-| **3.4.2** | Cookie ベースのセッショントークンには 'HttpOnly' 属性が設定されていることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 1004 | 7.1.1 |
-| **3.4.3** | Cookie ベースのセッショントークンには、クロスサイトリクエストフォージェリ攻撃への露出を制限するために、'SameSite' 属性を利用していることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 16 | 7.1.1 |
+| **3.4.1** | Cookie ベースのセッショントークンには 'Secure' 属性が設定されていることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 614 | 7.1.1 |
+| **3.4.2** | Cookie ベースのセッショントークンには 'HttpOnly' 属性が設定されていることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 1004 | 7.1.1 |
+| **3.4.3** | Cookie ベースのセッショントークンには、クロスサイトリクエストフォージェリ攻撃への露出を制限するために、'SameSite' 属性を利用していることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 16 | 7.1.1 |
 | **3.4.4** | Cookie ベースのセッショントークンには、セッション Cookie の機密性を提供するために、"__Host-" プレフィックス (参考情報を参照) を使用していることを検証します。 | ✓ | ✓ | ✓ | 16 | 7.1.1 |
-| **3.4.5** | セッション Cookie を上書きまたは開示する可能性があるセッション Cookie を設定または使用する他のアプリケーションと一緒のドメイン名の下でアプリケーションが公開されている場合には、可能な最も正確なパスを使用して Cookie ベースのセッショントークンに path 属性を設定していることを検証します。 ([C6](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 16 | 7.1.1 |
+| **3.4.5** | セッション Cookie を上書きまたは開示する可能性があるセッション Cookie を設定または使用する他のアプリケーションと一緒のドメイン名の下でアプリケーションが公開されている場合には、可能な最も正確なパスを使用して Cookie ベースのセッショントークンに path 属性を設定していることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 16 | 7.1.1 |
 
 ## V3.5 トークンベースのセッション管理
 
@@ -90,6 +90,6 @@ TLS や他のセキュアなトランスポートチャネルはセッション�
 
 詳細については、以下も参照してください。
 
-* [OWASP Testing Guide 4.0: Session Management Testing](https://www.owasp.org/index.php/Testing_for_Session_Management)
-* [OWASP Session Management Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Session_Management_Cheat_Sheet.md)
+* [OWASP Testing Guide 4.0: Session Management Testing](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/README.html)
+* [OWASP Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
 * [Set-Cookie __Host- prefix details](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#Directives)
