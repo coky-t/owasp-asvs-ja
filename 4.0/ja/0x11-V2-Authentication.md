@@ -40,7 +40,7 @@ NIST 800-63 により「記憶された秘密」と呼ばれるパスワード�
 
 | # | 説明 | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **2.1.1** | ユーザーが設定するパスワードの長さは少なくとも 12 文字であることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
+| **2.1.1** | ユーザーが設定するパスワードの長さは (複数の空白が結合された後) 少なくとも 12 文字であることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
 | **2.1.2** | 64 文字以上 (ただし 128 文字以下) のパスワードが許可されていることを検証します。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
 | **2.1.3** | パスワードの切り捨てが行われていないことを検証します。ただし、連続する複数のスペースは単一のスペースに置き換えることができます。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
 | **2.1.4** | スペースや絵文字などの言語ニュートラルな文字を含む、印字可能な Unicode 文字がパスワードで許可されていることを検証します。 | ✓ | ✓ | ✓ | 521 | 5.1.1.2 |
