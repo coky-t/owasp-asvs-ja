@@ -39,5 +39,5 @@
 詳細については、以下も参照してください。
 
 *  [OWASP – TLS Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html)
-*  [OWASP - Pinning Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Pinning_Cheat_Sheet.html)
+*  [OWASP - Pinning Guide](https://owasp.org/www-community/controls/Certificate_and_Public_Key_Pinning)
 * 「TLS の承認されたモード」に関する注意。これまで ASVS は米国規格 FIPS 140-2 を参照していましたが、グローバル規格として US 規格の適用は困難、矛盾、混乱の可能性があります。9.1.3 に準拠するより良い方法は[Mozilla の Server Side TLS](https://wiki.mozilla.org/Security/Server_Side_TLS) や [既知の良い構成を生成する](https://mozilla.github.io/server-side-tls/ssl-config-generator/) などのガイドを見直し、望ましいセキュリティレベルを得るためにsslyze などの既知の TLS 評価ツール、さまざまな脆弱性スキャナ、信頼できる TLS オンライン評価サービスを使用することです。一般的に、期限切れの暗号やセキュアではない暗号の使用、Perfect Forward Secrecy の欠如、期限切れの SSL プロトコルやセキュアではない SSL プロトコル、脆弱な優先暗号などがこのセクションでの不適合となります。
