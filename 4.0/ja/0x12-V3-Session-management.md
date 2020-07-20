@@ -65,12 +65,12 @@ TLS や他のセキュアなトランスポートチャネルはセッション�
 
 ## V3.6 Federation または Assertion からの再認証
 
-このセクションは Relying Party (RP) または Credential Service Provider (CSP) のコードを書いている人に関するものです。これらの機能を実装するコードに依存する場合には、これらの問題が正しく処理されていることを確認します。
+このセクションは Relying Party (RP) または資格情報サービスプロバイダ (Credential Service Provider, CSP) のコードを書いている人に関するものです。これらの機能を実装するコードに依存する場合には、これらの問題が正しく処理されていることを確認します。
 
 | # | 説明 | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **3.6.1** | Relying Party が Credential Service Provider (CSP) に最大認証時間を指定していること、および CSP がその期間内にセッションを使用していない場合には CSP が subscriber を再認証することを検証します。 |  |  | ✓ | 613 | 7.2.1 |
-| **3.6.2** | RP がユーザーを再認証する必要があるかどうかを RP が判断できるようにするために、Credential Service Provider (CSP) が Relying Party に最後の認証イベントを通知することを検証します。 |  |  | ✓ | 613| 7.2.1 |
+| **3.6.1** | Relying Party が資格情報サービスプロバイダ (Credential Service Provider, CSP) に最大認証時間を指定していること、および CSP がその期間内にセッションを使用していない場合には CSP が subscriber を再認証することを検証します。 |  |  | ✓ | 613 | 7.2.1 |
+| **3.6.2** | RP がユーザーを再認証する必要があるかどうかを RP が判断できるようにするために、資格情報サービスプロバイダ (Credential Service Provider, CSP) が Relying Party に最後の認証イベントを通知することを検証します。 |  |  | ✓ | 613| 7.2.1 |
 
 ## V3.7 セッション管理の悪用に対する防御
 
