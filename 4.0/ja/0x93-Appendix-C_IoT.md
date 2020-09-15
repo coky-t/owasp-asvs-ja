@@ -1,4 +1,4 @@
-# 付録 C: Internet of Things 検証要件
+# 付録 C: Internet of Things の検証要件
 
 この章はもともとメインブランチにありましたが、OWASP IoT チームが行った成果があり、この主題に関して二つの異なるスレッドを維持することは意味がありません。4.0 リリースでは、これを付録に移動し、これを必要とするすべての人には、むしろメインの [OWASP IoT プロジェクト](https://owasp.org/www-project-internet-of-things/) を使用するように強く要請します。
 
