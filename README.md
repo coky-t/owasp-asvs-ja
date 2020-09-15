@@ -5,7 +5,7 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 ## OWASP アプリケーションセキュリティ検証標準 4.0 日本語版
 
 * [ヘッダ](4.0/ja/0x00-Header.md)
-* [扉](4.0/ja/0x01-Frontispiece.md)
+* [口絵](4.0/ja/0x01-Frontispiece.md)
 * [序文](4.0/ja/0x02-Preface.md)
 * [ASVSの使い方](4.0/ja/0x03-Using-ASVS.md)
 * [監査と認定](4.0/ja/0x04-Assessment_and_Certification.md)
