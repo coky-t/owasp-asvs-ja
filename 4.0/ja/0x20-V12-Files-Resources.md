@@ -56,7 +56,7 @@ zip 爆弾はペネトレーションテスト技法を使用して大いにテ�
 
 ## 参考情報
 
-詳細については、以下も参照してください。
+詳しくは以下の情報を参照してください。
 
 * [File Extension Handling for Sensitive Information](https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload)
 * [Reflective file download by Oren Hafif](https://www.trustwave.com/Resources/SpiderLabs-Blog/Reflected-File-Download---A-New-Web-Attack-Vector/)

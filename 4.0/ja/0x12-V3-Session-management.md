@@ -88,7 +88,7 @@ TLS や他のセキュアなトランスポートチャネルはセッション�
 
 ## 参考情報
 
-詳細については、以下も参照してください。
+詳しくは以下の情報を参照してください。
 
 * [OWASP Testing Guide 4.0: Session Management Testing](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/README.html)
 * [OWASP Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)

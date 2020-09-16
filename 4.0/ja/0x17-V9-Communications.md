@@ -36,7 +36,7 @@
 
 ## 参考情報
 
-詳細については、以下も参照してください。
+詳しくは以下の情報を参照してください。
 
 *  [OWASP – TLS Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html)
 *  [OWASP - Pinning Guide](https://owasp.org/www-community/controls/Certificate_and_Public_Key_Pinning)

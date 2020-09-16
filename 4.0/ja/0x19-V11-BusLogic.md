@@ -25,7 +25,7 @@
 
 ## 参考情報
 
-詳細については、以下も参照してください。
+詳しくは以下の情報を参照してください。
 
 * [OWASP Web Security Testing Guide 4.1: Business Logic Testing](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/10-Business_Logic_Testing/README.html)
 * [OWASP AppSensor](https://github.com/jtmelton/appsensor) や [OWASP Automated Threats to Web Applications](https://owasp.org/www-project-automated-threats-to-web-applications/) の使用を含め、自動化対策はさまざまな方法で実現できます。

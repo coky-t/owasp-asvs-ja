@@ -54,7 +54,7 @@
 
 ## 参考情報
 
-詳細については、以下も参照してください。
+詳しくは以下の情報を参照してください。
 
 * [Consider using Security Headers website to check security and anti-caching headers](https://securityheaders.io)
 * [OWASP Secure Headers project](https://owasp.org/www-project-secure-headers/)

@@ -76,7 +76,7 @@
 
 ## 参考情報
 
-詳細については、以下も参照してください。
+詳しくは以下の情報を参照してください。
 
 * [OWASP Web Security Testing Guide 4.1: Testing for HTTP Verb Tampering]( https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/03-Testing_for_HTTP_Verb_Tampering.html)
 * API レスポンスに Content-Disposition を追加すると、クライアントとサーバー間の MIME タイプの理解の相違に基づく多くの攻撃を防ぐことができます。また "filename" オプションは [反射型ファイルダウンロード攻撃](https://www.blackhat.com/docs/eu-14/materials/eu-14-Hafif-Reflected-File-Download-A-New-Web-Attack-Vector.pdf) を防ぐのに役立ちます。

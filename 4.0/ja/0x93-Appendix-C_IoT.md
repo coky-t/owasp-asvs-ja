@@ -51,7 +51,7 @@
 
 ## 参考情報
 
-詳細については、以下も参照してください。
+詳しくは以下の情報を参照してください。
 
 * [OWASP Internet of Things Top 10](https://owasp.org/www-pdf-archive/OWASP-IoT-Top-10-2018-final.pdf)
 * [OWASP Embedded Application Security Project](https://owasp.org/www-project-embedded-application-security/)
