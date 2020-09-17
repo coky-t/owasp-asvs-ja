@@ -1,6 +1,6 @@
 # 付録 B: 参考情報
 
-以下の OWASP プロジェクトはこの標準のユーザーや採用者にとって最も役に立つものです。
+以下の OWASP プロジェクトはこの標準のユーザや採用者にとって最も役に立つものです。
 
 ## OWASP コアプロジェクト
 
@@ -32,7 +32,7 @@
 
 ## その他
 
-同様に、以下の Web サイトはこの標準のユーザーや採用者にとって非常に有用であると思われるものです。
+同様に、以下の Web サイトはこの標準のユーザや採用者にとって非常に有用であると思われるものです。
 
 1. SecLists Github: [https://github.com/danielmiessler/SecLists](https://github.com/danielmiessler/SecLists)
 2. MITRE Common Weakness Enumeration: [https://cwe.mitre.org/](https://cwe.mitre.org/)
