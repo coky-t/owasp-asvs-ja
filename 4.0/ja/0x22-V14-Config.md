@@ -24,7 +24,7 @@
 | --- | --- | --- | --- | -- | -- |
 | **14.1.1** | アプリケーションのビルドおよびデプロイメントプロセスが、CI / CD 自動化、自動構成管理、自動デプロイメントスクリプトなど、セキュアでリピート可能な方法で実行されていることを検証します。 |  | ✓ | ✓ |  |
 | **14.1.2** | スタックのランダム化、データ実行防止など、利用可能なすべてのバッファオーバーフロー保護および警告を有効にし、安全ではないポインタ、メモリ、書式文字列、整数、文字列操作が見つかった場合にはビルドを中止するようにコンパイラフラグを設定していることを検証します。 |  | ✓ | ✓ | 120 |
-| **14.1.3** | 使用しているアプリケーションサーバーおよびフレームワークの推奨に従い、サーバー構成が堅牢化されていることを検証します。 |  | ✓ | ✓ | 16 |
+| **14.1.3** | 使用しているアプリケーションサーバおよびフレームワークの推奨に従い、サーバ構成が堅牢化されていることを検証します。 |  | ✓ | ✓ | 16 |
 | **14.1.4** | アプリケーション、構成、およびすべての依存関係が、文書化およびテストされた Runbook から作成された自動デプロイメントスクリプトを使用して遅延なく再デプロイできること、またはバックアップからタイムリーにリストアできることを検証します。 |  | ✓ | ✓ |  |
 | **14.1.5** | 改竄を検出するために、許可された管理者がすべてのセキュリティ関連構成の完全性を検証できることを検証します。 |  |  | ✓ |  |
 
@@ -49,8 +49,8 @@
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | --- | --- | --- | --- | -- | -- |
-| **14.3.1** | Web またはアプリケーションサーバーおよびフレームワークのエラーメッセージが、意図しないセキュリティ開示を排除するために、ユーザーが操作可能でカスタマイズされたレスポンスを配信するように設定されていることを検証します。 | ✓ | ✓ | ✓ | 209 |
-| **14.3.2** | デバッグ機能、開発者コンソール、意図しないセキュリティ開示を排除するために、Web またはアプリケーションサーバーおよびアプリケーションフレームワークのデバッグモードが本番環境で無効になっていることを検証します。 | ✓ | ✓ | ✓ | 497 |
+| **14.3.1** | Web またはアプリケーションサーバおよびフレームワークのエラーメッセージが、意図しないセキュリティ開示を排除するために、ユーザーが操作可能でカスタマイズされたレスポンスを配信するように設定されていることを検証します。 | ✓ | ✓ | ✓ | 209 |
+| **14.3.2** | デバッグ機能、開発者コンソール、意図しないセキュリティ開示を排除するために、Web またはアプリケーションサーバおよびアプリケーションフレームワークのデバッグモードが本番環境で無効になっていることを検証します。 | ✓ | ✓ | ✓ | 497 |
 | **14.3.3** | HTTP ヘッダまたは HTTP レスポンスの一部がシステムコンポーネントの詳細なバージョン情報を開示していないことを検証します。 | ✓ | ✓ | ✓ | 200 |
 
 ## V14.4 HTTP セキュリティヘッダ要件
@@ -69,7 +69,7 @@
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | --- | --- | --- | --- | -- | -- |
-| **14.5.1** | アプリケーションサーバーが、アプリケーションや API によって使用されているメソッドのみ (pre-flight OPTIONS を含む) を受け入れ、アプリケーションコンテキストに対する無効な要求についてログ出力やアラート発行することを検証します。 | ✓ | ✓ | ✓ | 749 |
+| **14.5.1** | アプリケーションサーバが、アプリケーションや API によって使用されているメソッドのみ (pre-flight OPTIONS を含む) を受け入れ、アプリケーションコンテキストに対する無効な要求についてログ出力やアラート発行することを検証します。 | ✓ | ✓ | ✓ | 749 |
 | **14.5.2** | Origin ヘッダは攻撃者によって簡単に変更される可能性があるため、提供された Origin ヘッダが認証またはアクセス制御判定に使用されていないことを検証します。 | ✓ | ✓ | ✓ | 346 |
 | **14.5.3** | クロスオリジンリソース共有 (CORS) Access-Control-Allow-Origin ヘッダが信頼できるドメインおよびサブドメインの厳密な許可リストを使用して照合し、"null" オリジンをサポートしていないことを検証します。 | ✓ | ✓ | ✓ | 346 |
 | **14.5.4** | 信頼できるプロキシまたは SSO デバイスにより追加されたベアラトークンなどの HTTP ヘッダがアプリケーションにより認証されていることを検証します。 |  | ✓ | ✓ | 306 |
@@ -79,7 +79,7 @@
 詳しくは以下の情報を参照してください。
 
 * [OWASP Web Security Testing Guide 4.1: Testing for HTTP Verb Tampering]( https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/03-Testing_for_HTTP_Verb_Tampering.html)
-* API レスポンスに Content-Disposition を追加すると、クライアントとサーバー間の MIME タイプの理解の相違に基づく多くの攻撃を防ぐことができます。また "filename" オプションは [反射型ファイルダウンロード攻撃](https://www.blackhat.com/docs/eu-14/materials/eu-14-Hafif-Reflected-File-Download-A-New-Web-Attack-Vector.pdf) を防ぐのに役立ちます。
+* API レスポンスに Content-Disposition を追加すると、クライアントとサーバ間の MIME タイプの理解の相違に基づく多くの攻撃を防ぐことができます。また "filename" オプションは [反射型ファイルダウンロード攻撃](https://www.blackhat.com/docs/eu-14/materials/eu-14-Hafif-Reflected-File-Download-A-New-Web-Attack-Vector.pdf) を防ぐのに役立ちます。
 * [Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
 * [Exploiting CORS misconfiguration for BitCoins and Bounties](https://portswigger.net/blog/exploiting-cors-misconfigurations-for-bitcoins-and-bounties)
 * [OWASP Web Security Testing Guide 4.1: Configuration and Deployment Management Testing](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/README.html)
