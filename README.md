@@ -23,9 +23,9 @@ This is the Japanese translation of the [OWASP Application Security Verification
 * [V12: ファイルとリソースの検証要件](4.0/ja/0x20-V12-Files-Resources.md)
 * [V13: API、Webサービスの検証要件](4.0/ja/0x21-V13-API.md)
 * [V14: 構成の検証要件](4.0/ja/0x22-V14-Config.md)
-* [付録 A: 用語集](4.0/ja/0x90-Appendix-A_Glossary.md)
-* [付録 B: 参考情報](4.0/ja/0x91-Appendix-B_References.md)
-* [付録 C: IoT検証要件](4.0/ja/0x93-Appendix-C_IoT.md)
+* [Appendix A: 用語集](4.0/ja/0x90-Appendix-A_Glossary.md)
+* [Appendix B: 参考情報](4.0/ja/0x91-Appendix-B_References.md)
+* [Appendix C: IoT検証要件](4.0/ja/0x93-Appendix-C_IoT.md)
 
 ### 参考資料
 
