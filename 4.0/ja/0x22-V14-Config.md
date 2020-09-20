@@ -71,7 +71,7 @@
 | --- | --- | --- | --- | -- | -- |
 | **14.5.1** | アプリケーションサーバが、pre-flight OPTIONS を含む、アプリケーションまたは API で使用されている HTTP メソッドのみを受け入れる。 and logs/alerts on any requests that are not valid for the application context. | ✓ | ✓ | ✓ | 749 |
 | **14.5.2** | 提供された Origin ヘッダは、攻撃者によって簡単に変更できるため、認証やアクセス制御の判断に使用されていない。 | ✓ | ✓ | ✓ | 346 |
-| **14.5.3** | オリジン間リソース共有（Cross-Origin Resource Sharing, CORS）の Access-Control-Allow-Origin ヘッダが信頼できるドメインの厳密な allow list リストを使用して照合し、「null」オリジンをサポートしていない。 | ✓ | ✓ | ✓ | 346 |
+| **14.5.3** | オリジン間リソース共有（Cross-Origin Resource Sharing, CORS）の Access-Control-Allow-Origin ヘッダが信頼できるドメインの厳密な allow list を使用して照合し、「null」オリジンをサポートしていない。 | ✓ | ✓ | ✓ | 346 |
 | **14.5.4** | 信頼できるプロキシまたは bearer トークンのような SSO デバイスによって追加された HTTP ヘッダがアプリケーションによって認証されている。 | | ✓ | ✓ | 306 |
 
 ## 参考情報
