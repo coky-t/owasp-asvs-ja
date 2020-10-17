@@ -8,7 +8,7 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 * [口絵](4.0/ja/0x01-Frontispiece.md)
 * [序文](4.0/ja/0x02-Preface.md)
 * [ASVS の使い方](4.0/ja/0x03-Using-ASVS.md)
-* [監査と認定](4.0/ja/0x04-Assessment_and_Certification.md)
+* [監査と認証](4.0/ja/0x04-Assessment_and_Certification.md)
 * [V1: アーキテクチャ、設計、脅威モデリング要件](4.0/ja/0x10-V1-Architecture.md)
 * [V2: 認証の検証要件](4.0/ja/0x11-V2-Authentication.md)
 * [V3: セッション管理の検証要件](4.0/ja/0x12-V3-Session-management.md)
