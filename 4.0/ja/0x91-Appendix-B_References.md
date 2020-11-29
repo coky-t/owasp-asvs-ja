@@ -12,9 +12,9 @@
 
 ##  OWASP Cheat Sheet Series project
 
-[This project](https://www.owasp.org/index.php/OWASP_Cheat_Sheet_Series) has a number of cheat sheets which will be relevant for different topics in the ASVS.
+[このプロジェクト](https://owasp.org/www-project-cheat-sheets/) には ASVS のさまざまなトピックに関連する多数のチートシートがあります。
 
-There is a mapping to the ASVS which can be found here: [https://github.com/OWASP/CheatSheetSeries/blob/master/IndexASVS.md](https://github.com/OWASP/CheatSheetSeries/blob/master/IndexASVS.md)
+ここには ASVS へのマッピングもあります: [https://cheatsheetseries.owasp.org/cheatsheets/IndexASVS.html](https://cheatsheetseries.owasp.org/cheatsheets/IndexASVS.html)
 
 ## Mobile Security Related Projects
 
