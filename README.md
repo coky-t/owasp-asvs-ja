@@ -2,6 +2,12 @@
 
 This is the unofficial Japanese translation of the [OWASP Application Security Verification Standard](https://github.com/OWASP/ASVS).
 
+### Originator
+
+- Project Site - <https://owasp.org/www-project-application-security-verification-standard/>
+- Project Repository - <https://github.com/OWASP/www-project-application-security-verification-standard>
+- Document Repository - <https://github.com/OWASP/ASVS>
+
 ## OWASP アプリケーションセキュリティ検証標準 4.0 日本語版
 
 * [ヘッダ](4.0/ja/0x00-Header.md)
