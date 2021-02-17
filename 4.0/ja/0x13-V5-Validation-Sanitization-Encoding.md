@@ -72,9 +72,10 @@ Wモダンな Web アプリケーションのアーキテクチャにおいて�
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
-| **5.5.1** | アプリケーションが XML パーサを可能な限り最も制限の厳しい構成のみを使用するように正しく制限し、外部エンティティの解決などの危険な機能を無効にして XML 外部エンティティ (XML eXternal Entity, XXE) 攻撃を防ぐようにしている。 | ✓ | ✓ | ✓ | 611 |
-| **5.5.2** | 信頼できないデータのデシリアライズが回避されている、または受信したデシリアライゼーションデータをフィルタすることにより保護されている。 | ✓ | ✓ | ✓ | 502 |
-| **5.5.3** | ブラウザもしくは JavaScript ベースのバックエンドで JSON をパースするときは JSON.parse を使用する。eval() を使用しない。 | ✓ | ✓ | ✓ | 95 |
+| **5.5.1** | [削除] | | | | |
+| **5.5.2** | アプリケーションが XML パーサを可能な限り最も制限の厳しい構成のみを使用するように正しく制限し、外部エンティティの解決などの危険な機能を無効にして XML 外部エンティティ (XML eXternal Entity, XXE) 攻撃を防ぐようにしている。 | ✓ | ✓ | ✓ | 611 |
+| **5.5.3** | [修正] 信頼できないデータのデシリアライズが回避されている、または受信したデシリアライゼーションデータをフィルタすることにより保護されている。 | ✓ | ✓ | ✓ | 502 |
+| **5.5.4** | ブラウザもしくは JavaScript ベースのバックエンドで JSON をパースするときは JSON.parse を使用する。eval() を使用しない。 | ✓ | ✓ | ✓ | 95 |
 
 ## 参考情報
 
@@ -98,7 +99,7 @@ Wモダンな Web アプリケーションのアーキテクチャにおいて�
 * [AngularJS Strict Contextual Escaping](https://docs.angularjs.org/api/ng/service/$sce)
 * [AngularJS ngBind](https://docs.angularjs.org/api/ng/directive/ngBind)
 * [Angular Sanitization](https://angular.io/guide/security#sanitization-and-security-contexts)
-* [Angular Template Security](https://angular.io/guide/template-syntax#content-security)
+* [Angular Security](https://angular.io/guide/security)
 * [ReactJS Escaping](https://reactjs.org/docs/introducing-jsx.html#jsx-prevents-injection-attacks)
 * [Improperly Controlled Modification of Dynamically-Determined Object Attributes](https://cwe.mitre.org/data/definitions/915.html)
 
