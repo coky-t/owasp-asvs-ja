@@ -27,7 +27,7 @@ V7.1 は OWASP Top 10 2017:A10 をカバーしています。2017:A10 とこの�
 | :---: | :--- | :---: | :---:| :---: | :---: |
 | **7.1.1** | アプリケーションが資格情報、支払い明細をログに記録しない。セッショントークンは不可逆的なハッシュ形式でのみログに格納すべきである。 ([C9, C10](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 532 |
 | **7.1.2** | アプリケーションが地域のプライバシー法や関連するセキュリティポリシーの下で定義されているような他の機密データをログに記録していない。 ([C9](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 532 |
-| **7.1.3** | 成功および失敗した認証イベント、アクセス制御の失敗、デシリアライズの失敗および入力検証の失敗など、セキュリティに関するイベントをアプリケーションがログに記録している。 ([C5, C7](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 778 |
+| **7.1.3** | [修正] 成功および失敗した認証イベント、アクセス制御の失敗、デシリアライズの失敗、入力検証の失敗および不正な HTTP リクエスト (予期しない HTTP verb でのリクエストを含む) など、セキュリティに関するイベントをアプリケーションがログに記録している。 ([C5, C7](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 778 |
 | **7.1.4** | 各ログイベントにはイベントが発生した時のタイムラインの詳細な調査を可能にするために必要な情報が含まれている。 ([C9](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 778 |
 | **7.1.5** | [7.3.4 から移動] 時刻ソースが正しい時刻とタイムゾーンに同期している。インシデント後のフォレンジック解析を支援するためにシステムがグローバルである場合には、UTC でのみログを記録することを強く検討する。 ([C9](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | |
 
