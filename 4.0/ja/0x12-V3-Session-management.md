@@ -24,7 +24,7 @@ Web ベースのアプリケーションやステートフル API の中核と�
 | # | 説明 | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
 | **3.2.1** | アプリケーションがユーザ認証時に新しいセッショントークンを生成する。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 384 | 7.1 |
-| **3.2.2** | セッショントークンが少なくとも 64 ビットのエントロピーを有する。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 331 | 7.1 |
+| **3.2.2** | [修正] セッショントークンが少なくとも 128 ビットのエントロピーを有する。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 331 | 7.1 |
 | **3.2.3** | [削除] | | | | | |
 | **3.2.4** | セッショントークンが承認済みの暗号化アルゴリズムを使用して生成されている。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 331 | 7.1 |
 
