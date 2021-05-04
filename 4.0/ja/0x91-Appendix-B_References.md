@@ -1,8 +1,8 @@
 # 付録 B: 参考情報
 
-以下の OWASP プロジェクトはこの標準のユーザや採用者にとって最も役に立つものです。
+以下の OWASP プロジェクトはこの標準のユーザや採用者に役立つでしょう。
 
-## OWASP コアプロジェクト
+## OWASP 主要プロジェクト
 
 1. OWASP Top 10 Project: [https://owasp.org/www-project-top-ten/](https://owasp.org/www-project-top-ten/)
 2. OWASP Web Security Testing Guide: [https://owasp.org/www-project-web-security-testing-guide/](https://owasp.org/www-project-web-security-testing-guide/)
@@ -32,7 +32,7 @@
 
 ## その他
 
-同様に、以下の Web サイトはこの標準のユーザや採用者にとって非常に有用であると思われるものです。
+同様に、以下の Web サイトはこの標準のユーザや採用者に役立つでしょう。
 
 1. SecLists Github: [https://github.com/danielmiessler/SecLists](https://github.com/danielmiessler/SecLists)
 2. MITRE Common Weakness Enumeration: [https://cwe.mitre.org/](https://cwe.mitre.org/)
