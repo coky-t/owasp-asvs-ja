@@ -37,3 +37,11 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 
 * [OWASPアプリケーションセキュリティ検証標準 3.0.1 JPCERT/CC 翻訳版](https://www.jpcert.or.jp/securecoding/materials-owaspasvs.html)
 * [OWASPアプリケーションセキュリティ検証標準 4.0.1 Software ISAC 邦訳版](https://www.csaj.jp/NEWS/pr/200903_asvs.html)
+
+## License
+
+[Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/)
+
+## Author (日本語訳)
+
+[Koki Takeyama](https://github.com/coky-t)
