@@ -1,5 +1,5 @@
 {
-  "root" : "./4.0/ja",
+  "root" : "./5.0/ja",
   "plugins" : [ "anchors" ],
 
   "structure": {
