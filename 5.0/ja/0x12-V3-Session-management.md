@@ -49,8 +49,8 @@ TLS や他のセキュアなトランスポートチャネルはセッション�
 | **3.4.1** | Cookie ベースのセッショントークンには 'Secure' 属性が設定されている。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 614 | 7.1.1 |
 | **3.4.2** | Cookie ベースのセッショントークンには 'HttpOnly' 属性が設定されている。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 1004 | 7.1.1 |
 | **3.4.3** | Cookie ベースのセッショントークンには、クロスサイトリクエストフォージェリ攻撃への露出を制限するために、'SameSite' 属性を利用している。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 16 | 7.1.1 |
-| **3.4.4** | [修正] Cookie ベースのセッショントークンには "__Host-" プレフィックスを使用しており、Cookie は最初に Cookie を設定したホストにのみ送信されている。 | ✓ | ✓ | ✓ | 16 | 7.1.1 |
-| **3.4.5** | [修正] セッション Cookie を開示する可能性があるセッション Cookie を設定または使用する他のアプリケーションと一緒のドメイン名の下でアプリケーションが公開されている場合には、可能な最も正確なパスを使用して Cookie ベースのセッショントークンに path 属性を設定している。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 16 | 7.1.1 |
+| **3.4.4** | Cookie ベースのセッショントークンには "__Host-" プレフィックスを使用しており、Cookie は最初に Cookie を設定したホストにのみ送信されている。 | ✓ | ✓ | ✓ | 16 | 7.1.1 |
+| **3.4.5** | セッション Cookie を開示する可能性があるセッション Cookie を設定または使用する他のアプリケーションと一緒のドメイン名の下でアプリケーションが公開されている場合には、可能な最も正確なパスを使用して Cookie ベースのセッショントークンに path 属性を設定している。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 16 | 7.1.1 |
 | **3.4.6** | [追加] Cookie ベースのセッショントークンは Set-Cookie ヘッダと Cookie ヘッダでのみ転送されている。 | ✓ | ✓ | ✓ | 200 | |
 
 ## V3.5 トークンベースのセッション管理
@@ -72,7 +72,7 @@ TLS や他のセキュアなトランスポートチャネルはセッション�
 
 | # | 説明 | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **3.6.1** | [修正] Relying Party がクレデンシャルサービスプロバイダ (Credential Service Provider, CSP) に最大認証時間を指定していること、および CSP がその期間内にセッションを使用していない場合には CSP がユーザを再認証する。 | | | ✓ | 613 | 7.2.1 |
+| **3.6.1** | Relying Party がクレデンシャルサービスプロバイダ (Credential Service Provider, CSP) に最大認証時間を指定していること、および CSP がその期間内にセッションを使用していない場合には CSP がユーザを再認証する。 | | | ✓ | 613 | 7.2.1 |
 | **3.6.2** | RP がユーザを再認証する必要があるかどうかを RP が判断できるようにするために、クレデンシャルサービスプロバイダ (Credential Service Provider, CSP) が Relying Party に最後の認証イベントを通知する。 | | | ✓ | 613| 7.2.1 |
 
 ## V3.7 セッション管理の悪用に対する防御
