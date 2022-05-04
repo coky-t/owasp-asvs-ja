@@ -29,7 +29,7 @@
 | :---: | :--- | :---: | :---: | :---: | :---: |
 | **8.2.1** | 機密データが現代のブラウザでキャッシュされないように、アプリケーションは十分なキャッシュ防止ヘッダを設定している。 | ✓ | ✓ | ✓ | 525 |
 | **8.2.2** | [修正] ブラウザストレージ (localStorage, sessionStorage, IndexedDB, Cookie など) に保存されているデータに、Cookie 内の Cookie ベースのセッショントークンと sessionStorage 内のトークンベースのセッショントークンを除いて、機密データが含まれていない。 | ✓ | ✓ | ✓ | 922 |
-| **8.2.3** | クライアントやセッションが終了した後、ブラウザ DOM などのクライアントストレージから認証データがクリアされる。 | ✓ | ✓ | ✓ | 922 |
+| **8.2.3** | [修正] クライアントやセッションが終了した後、ブラウザ DOM などのクライアントストレージから認証データがクリアされる。"Clear-Site-Data ヘッダ" で対応できるかもしれないが、サーバ接続が失われた場合にはクライアント側でもクリアできるようにしておく必要がある。 | ✓ | ✓ | ✓ | 922 |
 
 ## V8.3 機密性の高い個人データ
 
@@ -64,3 +64,4 @@
 * [OWASP User Privacy Protection Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/User_Privacy_Protection_Cheat_Sheet.html)
 * [European Union General Data Protection Regulation (GDPR) overview](https://edps.europa.eu/data-protection_en)
 * [European Union Data Protection Supervisor - Internet Privacy Engineering Network](https://edps.europa.eu/data-protection/ipen-internet-privacy-engineering-network_en)
+* [Information on the "Clear-Site-Data" header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data)
