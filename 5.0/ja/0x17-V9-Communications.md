@@ -30,7 +30,7 @@
 
 ## V9.2 一般的なサービス間通信セキュリティ
 
-サーバ通信は HTTP だけではありません。監視システム、管理ツール、リモートアクセスと ssh 、ミドルウェア、データベース、メインフレーム、パートナー、既存のソースシステムなど、他のシステムとのセキュアな接続を確立する必要があります。「外側は堅牢だが、内側は傍受しやすい」ことを防ぐために、これらはすべて暗号化する必要があります。
+サーバ通信は HTTP だけではありません。監視システム、管理ツール、リモートアクセスと SSH 、ミドルウェア、データベース、メインフレーム、パートナー、既存のソースシステムなど、他のシステムとのセキュアな接続を確立する必要があります。「外側は堅牢だが、内側は傍受しやすい」ことを防ぐために、これらはすべて暗号化する必要があります。
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -65,7 +65,7 @@
 詳しくは以下の情報を参照してください。
 
 * [OWASP – TLS Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html)
-* [OWASP - Pinning Guide](https://owasp.org/www-community/controls/Certificate_and_Public_Key_Pinning)
+* [OWASP – Pinning Guide](https://owasp.org/www-community/controls/Certificate_and_Public_Key_Pinning)
 * 「TLS の承認されたモード」に関する注意:
     * これまで ASVS は米国規格 FIPS 140-2 を参照していましたが、グローバル規格として US 規格の適用は困難、矛盾、混乱の可能性があります。
     * セクション 9.1 に準拠するより良い方法は [Mozilla's Server Side TLS](https://wiki.mozilla.org/Security/Server_Side_TLS) や [既知の良い構成を生成する](https://mozilla.github.io/server-side-tls/ssl-config-generator/) などのガイドを見直し、望ましいセキュリティレベルを得るために、既知で最新の TLS 評価ツールを使用することです。
