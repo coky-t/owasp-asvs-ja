@@ -51,7 +51,7 @@ TLS や他のセキュアなトランスポートチャネルはセッション�
 | **3.4.2** | Cookie ベースのセッショントークンには 'HttpOnly' 属性が設定されている。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 1004 | 7.1.1 |
 | **3.4.3** | Cookie ベースのセッショントークンには、クロスサイトリクエストフォージェリ攻撃への露出を制限するために、'SameSite' 属性を利用している。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 1275 | 7.1.1 |
 | **3.4.4** | Cookie ベースのセッショントークンには "__Host-" プレフィックスを使用しており、Cookie は最初に Cookie を設定したホストにのみ送信されている。 | ✓ | ✓ | ✓ | 16 | 7.1.1 |
-| **3.4.5** | セッション Cookie を開示する可能性があるセッション Cookie を設定または使用する他のアプリケーションと一緒のドメイン名の下でアプリケーションが公開されている場合には、可能な最も正確なパスを使用して Cookie ベースのセッショントークンに path 属性を設定している。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 16 | 7.1.1 |
+| **3.4.5** | [文法] セッション Cookie を開示する可能性があるセッション Cookie を設定または使用する他のアプリケーションと一緒のドメイン名の下でアプリケーションが公開されている場合には、可能な最も正確なパスを使用して Cookie ベースのセッショントークンに path 属性を設定している。 ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 16 | 7.1.1 |
 | **3.4.6** | [追加] Cookie ベースのセッショントークンは Set-Cookie ヘッダと Cookie ヘッダでのみ転送されている。 | ✓ | ✓ | ✓ | 200 | |
 
 ## V3.5 トークンベースのセッション管理
