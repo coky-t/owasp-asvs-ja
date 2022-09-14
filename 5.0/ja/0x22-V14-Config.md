@@ -39,7 +39,7 @@
 | :---: | :--- | :---: | :---: | :---: | :---: |
 | **14.2.1** | できれば依存関係チェッカーをビルド時またはコンパイル時に使用して、すべてのコンポーネントが最新である。 ([C2](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 1026 |
 | **14.2.2** | [14.1.6 へ移動] | | | | |
-| **14.2.3** | JavaScript ライブラリ、CSS 、Web フォントなどのアプリケーション資産がコンテンツ配信ネットワーク (Content Delivery Network, CDN) や外部のプロバイダで外部的にホストされている場合には、サブリソース完全性 (Subresource Integrity, SRI) を使用して資産の完全性を確認している。 | ✓ | ✓ | ✓ | 829 |
+| **14.2.3** | [修正] JavaScript ライブラリ、CSS 、Web フォントなどのクライアントサイド資産がコンテンツ配信ネットワーク (Content Delivery Network, CDN) や外部のプロバイダで外部的にホストされている場合には、サブリソース完全性 (Subresource Integrity, SRI) を使用して資産の完全性を確認している。 | ✓ | ✓ | ✓ | 829 |
 | **14.2.4** | サードパーティコンポーネントは事前定義済みで信頼でき、継続的に保守されているリポジトリから取得している。 ([C2](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 829 |
 | **14.2.5** | 使用しているすべてのサードパーティライブラリのソフトウェア部品表 (SBOM) が保守されている。 ([C2](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | |
 | **14.2.6** | アプリケーションに必要な動作のみを開示するためにサードパーティライブラリをサンドボックス化またはカプセル化することでアタックサーフェスが減少している。 ([C2](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 265 |
