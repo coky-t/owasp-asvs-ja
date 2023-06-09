@@ -20,8 +20,6 @@
 
 入力バリデーションがセキュリティに役立たないこともあれば、中程度に役立つこともあり、セキュリティ防御の要となることもあります。入力バリデーションがどれほど有効であるかは、データの種類とそのデータの使用方法に依存します。入力バリデーションは完全なセキュリティ戦略ではないため、サンドボックス、サニタイゼーション、エンコーディング、パラメータ化なども活用する必要があります。
 
-
-
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---: | :---: | :---: |
 | **5.1.1** | 特にアプリケーションフレームワークがリクエストパラメータ (GET, POST, cookie, ヘッダ, 環境変数) のソースについて判別していない場合、アプリケーションが HTTP パラメータ汚染攻撃を防御している。 | ✓ | ✓ | ✓ | 235 |
@@ -31,7 +29,6 @@
 | **5.1.5** | URL リダイレクトおよびフォワードが許可リストにある宛先のみを許可すること、または潜在的に信頼できないコンテンツにリダイレクトするときに警告を表示する。 | ✓ | ✓ | ✓ | 601 |
 | **5.1.6** | [1.5.3 から移動, レベル L2 > L1] 信頼できるサービスレイヤで入力バリデーションが実施されている。 ([C5](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 602 |
 
-
 ## V5.2 サニタイゼーションおよびサンドボックス
 
 入力バリデーションは複雑なトピックです。
@@ -40,12 +37,11 @@
 
 例:
 
-  * サニタイゼーション: ユーザが HTML をオーサリングする場合、標準的な防御策は HTML を標準化して削除することです。 JSON パーサーを使用する前に JSON サニタイズを実行します。もちろん XSS 防御のために HTML サニタイゼーションも行います。
-  * エスケープ化: ユーザが入力したとおりにコンテンツを表示したい場合に UI で行われます。また LDAP インジェクション保護などのインジェクション保護のためにも行われます。
-  * パラメータ化: 主に SQL インジェクションに対して行われます。
-  * サンドボックス化: 何らかの理由で HTML をサニタイズできず、潜在的にアクティブなコンテンツを Web ページにダンプする必要がある場合、 iFrame サンドボックス化は非常に重要です。 CSP にもサンドボックス化の機能があります。
-  * Web UI の URL では JavaScript やデータ URL を止めることが非常に重要です (XSS 対策) 。しかし多くの場合には有効なデータは依然として危険です。
-
+* サニタイゼーション: ユーザが HTML をオーサリングする場合、標準的な防御策は HTML を標準化して削除することです。 JSON パーサーを使用する前に JSON サニタイズを実行します。もちろん XSS 防御のために HTML サニタイゼーションも行います。
+* エスケープ化: ユーザが入力したとおりにコンテンツを表示したい場合に UI で行われます。また LDAP インジェクション保護などのインジェクション保護のためにも行われます。
+* パラメータ化: 主に SQL インジェクションに対して行われます。
+* サンドボックス化: 何らかの理由で HTML をサニタイズできず、潜在的にアクティブなコンテンツを Web ページにダンプする必要がある場合、 iFrame サンドボックス化は非常に重要です。 CSP にもサンドボックス化の機能があります。
+* Web UI の URL では JavaScript やデータ URL を止めることが非常に重要です (XSS 対策) 。しかし多くの場合には有効なデータは依然として危険です。
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -107,7 +103,7 @@
 * [OWASP Cheat Sheet: Input Validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
 * [OWASP Testing Guide 4.0: Testing for HTTP Parameter Pollution](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/04-Testing_for_HTTP_Parameter_Pollution.html)
 * [OWASP LDAP Injection Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.html)
-* [OWASP Testing Guide 4.0: Client Side Testing](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client_Side_Testing/)
+* [OWASP Testing Guide 4.0: Client Side Testing](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/11-Client-side_Testing/README)
 * [OWASP Cross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 * [OWASP DOM Based Cross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
 * [OWASP Java Encoding Project](https://owasp.org/owasp-java-encoder/)
