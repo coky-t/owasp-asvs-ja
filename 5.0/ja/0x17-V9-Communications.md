@@ -50,7 +50,6 @@
 | **9.3.2** | [修正, 9.2.1 から移動] 内部サービス間の TLS 接続には信頼できる証明書が使用されている。内部生成証明書や自己署名証明書が使用されている場合、受け側のサービスは特定の内部 CA および特定の自己署名証明書のみを信頼するように構成する必要がある。それ以外はすべて拒否される。 | | ✓ | ✓ | 295 |
 | **9.3.3** | [追加] システム内で内部的に通信するサービスや「サービス内通信 (intra-service communications)」で相互 TLS (mutual TLS, mTLS) が使用され、ネットワーク接続の両端にいるすべての関係者が本人であることを保証している。 | | | ✓ | 295 |
 
-
 ## V9.4 一般的な TLS セキュリティガイダンス
 
 安全な TLS 構成を使用し、最新のツールを使用して構成を定期的に確認します。ワイルドカード TLS 証明書の使用は本質的に安全ではありませんが、所有するすべての環境 (実稼働、ステージング、開発、テストなど) にわたって展開される証明書の侵害は、それを使用するアプリケーションのセキュリティ態勢の侵害につながる可能性があります。可能であれば、異なる環境での個別の TLS 証明書の適切な保護、管理、使用を採用する必要があります。
@@ -69,5 +68,5 @@
 * [OWASP – TLS Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html)
 * [OWASP – Pinning Guide](https://owasp.org/www-community/controls/Certificate_and_Public_Key_Pinning)
 * 「TLS の承認されたモード」に関する注意:
-    * これまで ASVS は米国 FIPS 140 規格を参照していましたが、グローバル規格として US 規格の適用は困難、矛盾、混乱の可能性があります。
-    * セクション 9.1 に準拠するより良い方法は [Mozilla's Server Side TLS](https://wiki.mozilla.org/Security/Server_Side_TLS) や [既知の良い構成を生成する](https://mozilla.github.io/server-side-tls/ssl-config-generator/) などのガイドを見直し、望ましいセキュリティレベルを得るために、既知で最新の TLS 評価ツールを使用することです。
+  * これまで ASVS は米国 FIPS 140 規格を参照していましたが、グローバル規格として US 規格の適用は困難、矛盾、混乱の可能性があります。
+  * セクション 9.1 に準拠するより良い方法は [Mozilla's Server Side TLS](https://wiki.mozilla.org/Security/Server_Side_TLS) や [既知の良い構成を生成する](https://mozilla.github.io/server-side-tls/ssl-config-generator/) などのガイドを見直し、望ましいセキュリティレベルを得るために、既知で最新の TLS 評価ツールを使用することです。
