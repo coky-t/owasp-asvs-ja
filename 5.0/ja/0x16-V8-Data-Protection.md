@@ -22,6 +22,7 @@
 | **8.1.4** | アプリケーションが、IP 、ユーザ、1時間または1日あたりの合計数、またはアプリケーションにとって意味のあることなど、異常な数の要求を検出および警告できる。 | | ✓ | ✓ | 770 |
 | **8.1.5** | [削除, スコープ外] | | | | |
 | **8.1.6** | [削除, スコープ外] | | | | |
+| **8.1.7** | [追加] 正しいコンテンツタイプを持ち、機密性の高い動的コンテンツを含まないレスポンスのみをキャッシュするように、キャッシュメカニズムが設定されている。存在しないファイルがアクセスされる場合、Web サーバーは有効な別のファイルを返すのではなく 404 または 302 レスポンスを返す必要がある。これにより Web Cache Deception 攻撃を防ぐことができる。 | | ✓ | ✓ | 444 |
 
 ## V8.2 クライアント側のデータ保護
 
@@ -68,3 +69,4 @@
 * [European Union General Data Protection Regulation (GDPR) overview](https://edps.europa.eu/data-protection_en)
 * [European Union Data Protection Supervisor - Internet Privacy Engineering Network](https://edps.europa.eu/data-protection/ipen-internet-privacy-engineering-network_en)
 * [Information on the "Clear-Site-Data" header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data)
+* [White-paper on Web Cache Deception](https://www.blackhat.com/docs/us-17/wednesday/us-17-Gil-Web-Cache-Deception-Attack-wp.pdf)
