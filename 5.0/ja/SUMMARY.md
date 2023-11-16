@@ -21,4 +21,3 @@
 * [V14: 構成](0x22-V14-Config.md)
 * [付録 A: 用語集](0x90-Appendix-A_Glossary.md)
 * [付録 B: 参考情報](0x91-Appendix-B_References.md)
-* [付録 C: Internet of Things の検証要件](0x93-Appendix-C_IoT.md)
