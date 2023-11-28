@@ -46,7 +46,7 @@
 | :---: | :--- | :---: | :---: | :---: | :---: |
 | **10.3.1** | アプリケーションにクライアントまたはサーバの自動更新機能がある場合、更新はセキュアなチャネル経由で取得し、デジタル署名されている。更新コードは更新をインストールまたは実行する前に、その更新のデジタル署名を確認する必要がある。 | ✓ | ✓ | ✓ | 16 |
 | **10.3.2** | [修正] アプリケーションがコード署名などの完全性保護を採用している場合にのみ、アプリケーションの直接の制御または保護下にないソースからのコード、モジュール、コンテンツ、プラグインをロードまたは実行している。 | ✓ | ✓ | ✓ | 829 |
-| **10.3.3** | アプリケーションが期限切れドメイン名、期限切れ DNS ポインタや CNAME、パブリックソースコードリポジトリの期限切れプロジェクト、一時的なクラウド API、サーバレス機能、ストレージバケット (*自動生成バケットID*.cloud.example.com) などの DNS エントリや DNS サブドメインに依存している場合、そのアプリケーションがサブドメインテイクオーバーから保護されている。保護にはアプリケーションにより使用される DNS 名が有効期限や変更について定期的にチェックされるようにすることも含めることができる。 | ✓ | ✓ | ✓ | 350 |
+| **10.3.3** | [削除, スコープ外] | | | | |
 
 ## V10.4 防御的コーディング
 
@@ -59,6 +59,4 @@
 
 詳しくは以下の情報を参照してください。
 
-* [Hostile Subdomain Takeover, Detectify Labs](https://labs.detectify.com/2014/10/21/hostile-subdomain-takeover-using-herokugithubdesk-more/)
-* [Hijacking of abandoned subdomains part 2, Detectify Labs](https://labs.detectify.com/2014/12/08/hijacking-of-abandoned-subdomains-part-2/)
 * [Reference on Protecting against DOM Clobbering](https://domclob.xyz/domc_wiki/indicators/patterns.html#secure-patterns--guidelines)
