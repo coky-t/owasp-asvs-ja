@@ -19,5 +19,6 @@
 * [V12: ファイルおよびリソース](0x20-V12-Files-Resources.md)
 * [V13: API および Web サービス](0x21-V13-API.md)
 * [V14: 構成](0x22-V14-Config.md)
+* [V50: Web フロントエンドセキュリティ](0x50-V50-Web-Frontend-Security.md)
 * [付録 A: 用語集](0x90-Appendix-A_Glossary.md)
 * [付録 B: 参考情報](0x91-Appendix-B_References.md)
