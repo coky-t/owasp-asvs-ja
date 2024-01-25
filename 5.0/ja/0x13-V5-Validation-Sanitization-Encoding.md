@@ -75,6 +75,7 @@
 | **5.3.10** | アプリケーションが XPath インジェクションや XML インジェクション攻撃から保護する。 ([C4](https://owasp.org/www-project-proactive-controls/#div-numbering)) | ✓ | ✓ | ✓ | 643 |
 | **5.3.11** | [1.5.4 から移動] 出力エンコーディングが対象のインタプリタの近くまたはインタプリタにより発生する。 ([C4](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | 116 |
 | **5.3.12** | [追加] アプリケーションが CSV インジェクションや数式インジェクションから保護されている。アプリケーションは CSV ファイルをエクスポートする際に RFC4180 2.6 および 2.7 で定義されているエスケープ規則に従う必要がある。アプリケーションは CSV ファイルや xls, xlsx, odf などのその他のスプレッドシート形式をエクスポートする際に、フィールドの最初の文字が '=', '+', '-', '@', '\t' (タブ), '\00' (ヌル文字) などの特殊文字である場合、シングルクォートを使用してエスケープする必要がある。 | ✓ | ✓ | ✓ | 1236 |
+| **5.3.13** | [追加] LaTeX プロセッサは ("--shell-escape" フラグを使用しないなど) 安全に構成されており、LaTeX インジェクション攻撃を防ぐためにコマンド許可リストを使用している。 | | ✓ | ✓ | |
 
 注意: パラメータ化クエリや SQL エスケープの使用は必ずしも十分ではありません。テーブル名や列名、ORDER BY などはエスケープできません。これらのフィールドにエスケープされたユーザ指定データを含めると、クエリの失敗または SQL インジェクションを引き起こします。
 
@@ -98,6 +99,7 @@
 | **5.5.2** | アプリケーションが XML パーサーを最も制限の厳しい構成のみを使用するよう適切に制限し、XML 外部エンティティ (XML eXternal Entity, XXE) 攻撃を防止するために外部エンティティの解決などの危険な機能を無効にする。 | ✓ | ✓ | ✓ | 611 |
 | **5.5.3** | [修正, 1.5.2 からマージ] 信頼できないウライアントとの通信では逆シリアル化が使用されていない。それができない場合は、逆シリアル化攻撃を防ぐために、オブジェクトタイプの許可リストのみを許可するか、クライアントが逆シリアル化先のオブジェクトタイプを定義できないようにするなど、逆シリアル化が安全に実行されるようにする。 | ✓ | ✓ | ✓ | 502 |
 | **5.5.4** | ブラウザまたは JavaScript ベースのバックエンドで JSON をパースする場合には、JSON ドキュメントのパースに JSON.parse が使用されている。JSON のパースに eval() を使用してはいけない。 | ✓ | ✓ | ✓ | 95 |
+| **5.5.5** | [追加, 13.1.1 からマージ] JSON 相互運用性の脆弱性や、さまざまな URI やファイルの解析動作がリモートファイルインクルージョン (RFI) やサーバサイドリクエストフォージェリ (SSRF) 攻撃で悪用されるような問題を回避するために、同じデータ型に対してアプリケーションで使用されるさまざまなパーサー (JSON パーサー、XML パーサー、URL パーサーなど) は一貫した方法で解析を実行し、同じエンコードメカニズムを使用する。 | | ✓ | ✓ | 436 |
 
 ## 参考情報
 
@@ -125,7 +127,9 @@
 * [ReactJS Escaping](https://reactjs.org/docs/introducing-jsx.html#jsx-prevents-injection-attacks)
 * [Improperly Controlled Modification of Dynamically-Determined Object Attributes](https://cwe.mitre.org/data/definitions/915.html)
 
-逆シリアル化の詳細については、以下を参照してください。
+逆シリアル化やパースの問題の詳細については、以下を参照してください。
 
 * [OWASP Deserialization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)
 * [OWASP Deserialization of Untrusted Data Guide](https://owasp.org/www-community/vulnerabilities/Deserialization_of_untrusted_data)
+* [An Exploration of JSON Interoperability Vulnerabilities](https://bishopfox.com/blog/json-interoperability-vulnerabilities)
+* [Orange Tsai - A new era of SSRF Exploiting URL Parser In Trending Programming Languages](https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)
