@@ -14,9 +14,9 @@
 
 ## V5.1 入力バリデーション
 
-ポジティブ許可リストと強いデータ型付けを使用して、入力バリデーション制御を適切に実装すると、インジェクション攻撃を排除できる場合があります。しかし、入力バリデーションがセキュリティに有効でない場合もあります。たとえば、攻撃を成功させるために有効な電子メールアドレスや URL を使用することがあります。
+ポジティブ許可リストと強いデータ型付けを使用して、入力バリデーション制御を適切に実装すると、インジェクション攻撃を排除できる場合があります。しかし、入力バリデーションがセキュリティ目的に有効でない場合もあります。たとえば、攻撃を成功させるために有効な電子メールアドレスや URL を使用することがあります。
 
-入力バリデーションは依然としいて重要なセキュリティ衛生であり、可能な限りすべての入力に適用すべきです。
+入力バリデーションはセキュリティ衛生上、依然として重要であり、可能な限りすべての入力に適用すべきです。
 
 入力バリデーションがセキュリティに役立たないこともあれば、中程度に役立つこともあり、セキュリティ防御の要となることもあります。入力バリデーションがどれほど有効であるかは、データの種類とそのデータの使用方法に依存します。入力バリデーションは完全なセキュリティ戦略ではないため、サンドボックス、サニタイゼーション、エンコーディング、パラメータ化なども活用する必要があります。
 
@@ -41,7 +41,7 @@
 * エスケープ化: ユーザが入力したとおりにコンテンツを表示したい場合に UI で行われます。また LDAP インジェクション保護などのインジェクション保護のためにも行われます。
 * パラメータ化: 主に SQL インジェクションに対して行われます。
 * サンドボックス化: 何らかの理由で HTML をサニタイズできず、潜在的にアクティブなコンテンツを Web ページにダンプする必要がある場合、 iFrame サンドボックス化は非常に重要です。 CSP にもサンドボックス化の機能があります。
-* Web UI の URL では JavaScript やデータ URL を止めることが非常に重要です (XSS 対策) 。しかし多くの場合には有効なデータは依然として危険です。
+* Web UI の URL は XSS 攻撃に対する防御として JavaScript やデータ URL をブロックする必要があります。しかし多くの場合には有効なデータであっても依然として脅威となる可能性があることに注意することが重要です。
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -59,7 +59,7 @@
 
 ## V5.3 出力エンコーディングおよびインジェクション防止
 
-使用中のインタプリタに近いまたは隣接する出力エンコーディングはあらゆるアプリケーションのセキュリティにとって重要です。通常、出力エンコーディングは永続化されませんが、一時的な使用のために適切な出力コンテキストで安全に出力を描画するために使用されます。出力のエンコードに失敗すると、セキュアではなく、インジェクション可能で、危険なアプリケーションとなります。
+使用中のインタプリタに近いまたは隣接する出力エンコーディングはあらゆるアプリケーションのセキュリティにとって重要です。通常、出力エンコーディングは永続化されず、適切な出力コンテキストで出力を安全にレンダリングして、すぐに使用されます。出力のエンコードに失敗すると、セキュアではなく、インジェクション可能で、危険なアプリケーションとなります。
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -109,7 +109,7 @@
 * [OWASP Cheat Sheet: Input Validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
 * [OWASP Testing Guide 4.0: Testing for HTTP Parameter Pollution](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/04-Testing_for_HTTP_Parameter_Pollution.html)
 * [OWASP LDAP Injection Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.html)
-* [OWASP Testing Guide 4.0: Client Side Testing](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/11-Client-side_Testing/README)
+* [OWASP Testing Guide 4.0: Client-Side Testing](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/11-Client-side_Testing/README)
 * [OWASP Cross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 * [OWASP DOM Based Cross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
 * [OWASP Java Encoding Project](https://owasp.org/owasp-java-encoder/)
@@ -132,4 +132,4 @@
 * [OWASP Deserialization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)
 * [OWASP Deserialization of Untrusted Data Guide](https://owasp.org/www-community/vulnerabilities/Deserialization_of_untrusted_data)
 * [An Exploration of JSON Interoperability Vulnerabilities](https://bishopfox.com/blog/json-interoperability-vulnerabilities)
-* [Orange Tsai - A new era of SSRF Exploiting URL Parser In Trending Programming Languages](https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)
+* [Orange Tsai - A New Era of SSRF Exploiting URL Parser In Trending Programming Languages](https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)
