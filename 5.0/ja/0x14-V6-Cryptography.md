@@ -4,7 +4,7 @@
 
 検証対象のアプリケーションが以下の上位要件を満たすことを確認します。
 
-* すべての暗号化モジュールはセキュアな方法で失敗し、エラーは正しく処理されています。
+* すべての暗号化モジュールはセキュアに失敗し、エラーは正しく処理されています。
 * 適切な乱数生成器が使用されています。
 * 鍵へのアクセスはセキュアに管理されています。
 
@@ -37,7 +37,7 @@
 
 ## V6.3 乱数値
 
-暗号論的にセキュアな疑似乱数生成 (Cryptographically-secure Pseudo-random Number Generation, CSPRNG) を正しく実行することは非常に困難です。一般的に、システム内の優れたエントロピーソースは使い過ぎるとすぐに枯渇しますが、ランダム性の少ないソースは鍵や秘密が予測可能となる可能性があります。
+暗号論的にセキュアな疑似乱数生成 (Cryptographically secure Pseudo-random Number Generation, CSPRNG) を正しく実行することは非常に困難です。一般的に、システム内の優れたエントロピーソースは使い過ぎるとすぐに枯渇しますが、ランダム性の少ないソースは鍵や秘密が予測可能となる可能性があります。
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -58,6 +58,6 @@
 
 詳しくは以下の情報を参照してください。
 
-* [OWASP Testing Guide 4.0: Testing for weak Cryptography](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README.html)
+* [OWASP Testing Guide 4.0: Testing for Weak Cryptography](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README.html)
 * [OWASP Cheat Sheet: Cryptographic Storage](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
 * [FIPS 140-3](https://csrc.nist.gov/publications/detail/fips/140/3/final)
