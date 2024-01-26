@@ -5,7 +5,7 @@
 検証対象のアプリケーションが以下を備えていることを確認します。
 
 * セキュアで、再現性があり、自動化されたビルド環境。
-* 古くなったコンポーネントやセキュアでないコンポーネントがアプリケーションに含まれないような、堅牢なサードパーティライブラリ、依存関係、構成管理。
+* 古くなったコンポーネントやセキュアでないコンポーネントがアプリケーションに含まれないようにするための、堅牢なサードパーティライブラリ、依存関係、構成管理。
 
 箱から出してすぐのアプリケーションの構成はインターネット上で安全であるべきです。つまり、そのままで安全な構成であるということです。
 
@@ -52,7 +52,7 @@
 
 ## V14.3 意図しない情報漏洩
 
-デバッグコンソールなどの一般的な攻撃からの保護、クロスサイトスクリプティング (Cross-site Scripting, XSS) およびリモートファイルインクルージョン (Remote File Inclusion, RFI) 攻撃に対するハードルの引き上げ、そして多くのペネトレーションテストレポートの歓迎されない品質証明である厄介な情報露見「脆弱性」を排除するために、プロダクションの設定を堅牢化すべきです。これらの問題の多くは重大なリスクとみなされることはめったにありませんが、それらは他の脆弱性と連鎖しています。これらの問題がデフォルトで現れなければ、それはほとんどの攻撃が成功する前にハードルを引き上げます。
+プロダクションの設定を堅牢化して、一般的な攻撃から保護すべきです。対策としては、デバッグコンソールの無効化、クロスサイトスクリプティング (Cross-site Scripting, XSS) およびリモートファイルインクルージョン (Remote File Inclusion, RFI) 攻撃に対するハードルの引き上げ、そしてペネトレーションテストレポートに散見される些細な情報発見の「脆弱性」の排除などが挙げられます。これらの問題の多くは重大なリスクとみなされることはめったにありませんが、それらは他の脆弱性と連鎖しています。これらの問題がデフォルトで現れなければ、それはほとんどの攻撃が成功する前にハードルを引き上げます。
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -109,6 +109,6 @@
 
 * [OWASP Web Security Testing Guide 4.1: Testing for HTTP Verb Tampering]( https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/03-Testing_for_HTTP_Verb_Tampering.html)
 * [OWASP Web Security Testing Guide 4.1: Configuration and Deployment Management Testing](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/README.html)
-* [Defining multiple repositories in maven](https://maven.apache.org/guides/mini/guide-multiple-repositories.html)
+* [Defining multiple repositories in Maven](https://maven.apache.org/guides/mini/guide-multiple-repositories.html)
 * [Software Component Verification Standard V2 L1-3 requirements](https://github.com/OWASP/Software-Component-Verification-Standard/blob/master/en/0x11-V2-Software_Bill_of_Materials.md)
 * [Tips to Reduce the Attack Surface When Using Third-Party Libraries](https://www.slideshare.net/KatyAnton1/tips-to-reduce-the-attack-surface-when-using-thirdparty-libraries)
