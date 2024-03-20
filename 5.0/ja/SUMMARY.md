@@ -20,5 +20,6 @@
 * [V13: API および Web サービス](0x21-V13-API.md)
 * [V14: 構成](0x22-V14-Config.md)
 * [V50: Web フロントエンドセキュリティ](0x50-V50-Web-Frontend-Security.md)
+* [V51: OAuth 2.0 プロトコル](0x51-V51-OAuth2.md)
 * [付録 A: 用語集](0x90-Appendix-A_Glossary.md)
 * [付録 B: 参考情報](0x91-Appendix-B_References.md)
