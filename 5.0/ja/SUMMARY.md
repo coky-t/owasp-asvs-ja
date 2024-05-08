@@ -11,7 +11,7 @@
 * [V4: アクセス制御](0x12-V4-Access-Control.md)
 * [V5: バリデーション、サニタイゼーション、エンコーディング](0x13-V5-Validation-Sanitization-Encoding.md)
 * [V6: 保存時における暗号化](0x14-V6-Cryptography.md)
-* [V7: エラー処理およびログ記録](0x15-V7-Error-Logging.md)
+* [V7: セキュリティログ記録およびエラー処理](0x15-V7-Error-Logging.md)
 * [V8: データ保護](0x16-V8-Data-Protection.md)
 * [V9: 通信](0x17-V9-Communications.md)
 * [V10: 悪意あるコード](0x18-V10-Malicious.md)
