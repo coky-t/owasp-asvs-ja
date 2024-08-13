@@ -12,7 +12,7 @@
 
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---: | :---: | :---: |
-| **50.2.1** | [修正, 14.4.3 から移動] HTML, DOM, CSS, JSON, JavaScript インジェクション脆弱性などの XSS 攻撃に対する影響を軽減するのに役立つ Content-Security-Policy レスポンスヘッダが設定されている。 | ✓ | ✓ | ✓ | 1021 |
+| **50.2.1** | [修正, 14.4.3 から移動] HTML, DOM, CSS, JSON, JavaScript インジェクション脆弱性などの XSS 攻撃に対する影響を軽減するのに役立つ Content-Security-Policy レスポンスヘッダが設定されている。 | ✓ | ✓ | ✓ | |
 | **50.2.2** | [14.4.4 から移動] すべてのレスポンスに X-Content-Type-Options: nosniff ヘッダが含まれている。 | ✓ | ✓ | ✓ | 116 |
 | **50.2.3** | [修正, 14.4.5 から移動] Strict-Transport-Security ヘッダが、Strict-Transport-Security: max-age=31536000; includeSubdomains のように、すべてのレスポンスとすべてのサブドメインに含まれている。 | ✓ | ✓ | ✓ | 523 |
 | **50.2.4** | [14.4.6 から移動] URL 内の機密情報が Referer ヘッダを介して信頼できない関係者に公開されないように、適切な Referrer-Policy ヘッダが含まれている。 | ✓ | ✓ | ✓ | 116 |
