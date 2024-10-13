@@ -2,9 +2,9 @@
 
 ## 管理目標
 
-This paragraph contains documentation requirements that are pre-conditions for implementation and testing.
+この段落には、実装とテストの前提条件となるドキュメント要件が含まれています。
 
-Note that the documentation requirements here are a temporary solution, and it is yet to be decided how to organize them in the release. The requirements, that or not documentation requirements, are subject to be removed or moved.
+ここでのドキュメント要件は一時的な解決策であり、リリースでどのように整理するかはまだ決まっていないことに注意してください。ドキュメント要件であるかどうかに関わらず、要件は削除または移動される可能性があります。
 <!--
 セキュリティアーキテクチャは多くの組織で失われた技術となっています。エンタープライズアーキテクトの時代は DevSecOps で過去のものとなりました。アプリケーションセキュリティの分野では、最新のセキュリティアーキテクチャの原則をソフトウェア実務者に再導入しながら、アジャイルセキュリティの原則をキャッチアップし採用する必要があります。アーキテクチャは実装ではなく、潜在的に多くの異なる答えがあり、唯一の「正しい」答えがない問題について考える方法です。多くの場合、開発者がその問題を解決するはるかに優れた方法を知っている可能性がある場合には、セキュリティは柔軟性がなく、開発者が特定の方法でコードを修正することを要求するものとみなされます。アーキテクチャに対して唯一で単純な解決策はありません。そして、そうではないフリをすることはソフトウェアエンジニアリング分野への害となります。
 
