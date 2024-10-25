@@ -33,22 +33,15 @@
 
 ## V14.2 依存関係
 
-依存関係管理はあらゆる種類のアプリケーションを安全に運用するために不可欠です。古い依存関係やセキュアでない依存関係で最新に保てないことが、これまでで最大かつ最高となる攻撃の根本原因です。パッチで最新に保つことは不可欠ですが、公開された脆弱性に対する更新のみに頼ると、ベンダーがセキュリティ問題を公表せずに修正する可能性があるため、リスクを伴います。
-
-注意: レベル 1 では、14.2.1 順守はより正確なビルド時の静的コード解析や依存関係解析よりも、クライアント側および他のライブラリやコンポーネントの監視や検出に関連します。これらのより正確なテクニックは、必要に応じてインタビューにより発見可能です。
-
 | # | 説明 | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---: | :---: | :---: |
-| **14.2.1** | [修正] すべてのコンポーネントが最新である。 | ✓ | ✓ | ✓ | |
+| **14.2.1** | [10.6.1 へ移動] | | | | |
 | **14.2.2** | [14.1.6 へ移動] | | | | |
 | **14.2.3** | [50.6.1 へ移動] | | | | |
 | **14.2.4** | [削除, 1.10.2 へ移動] | | | | |
 | **14.2.5** | [1.10.2 へ移動] | | | | |
-| **14.2.6** | [修正, 14.2.8 へ分割, レベル L2 > L3] リスクの高いサードパーティライブラリや脆弱性の履歴があるライブラリは、必要な動作のみを利用できるようにカプセル化され、攻撃対象領域を減らしている。 | | | ✓ | 1061 |
-| **14.2.7** | [追加] 依存関係攪乱攻撃を防ぐために、サードパーティコンポーネントが内部で所有および開発されたアプリケーションとは別に供給されている。 | ✓ | ✓ | ✓ | 427 |
-| **14.2.8** | [追加, 14.2.6 から分割] リスクの高いサードパーティライブラリや脆弱性の履歴があるライブラリは、最も機密性の高いシステムモジュールやサービスからサンドボックス化され、たとえライブラリの脆弱性が悪用されたとしても、機密性の高いシステムモジュールやサービスが侵害されることがない。 | | | ✓ | 1061 |
-
-注: 特定の言語およびパッケージマネージャには、複数の要素 (groupId や artifactId など) を使用してパッケージを識別することを要求するエコシステムがあります。これによりビルドプロセスでリソースをより具体的に識別できるようになります。そうでない場合、パッケージマネージャは含まれているリポジトリまたはミラーの順で動作します。検索順を具体的に示すには、パッケージマネージャに相談してください。
+| **14.2.6** | [修正, 14.2.7 へ分割, レベル L2 > L3] リスクの高いサードパーティライブラリや脆弱性の履歴があるライブラリは、必要な動作のみを利用できるようにカプセル化され、攻撃対象領域を減らしている。 | | | ✓ | 1061 |
+| **14.2.7** | [追加, 14.2.6 から分割] リスクの高いサードパーティライブラリや脆弱性の履歴があるライブラリは、最も機密性の高いシステムモジュールやサービスからサンドボックス化され、たとえライブラリの脆弱性が悪用されたとしても、機密性の高いシステムモジュールやサービスが侵害されることがない。 | | | ✓ | 1061 |
 
 ## V14.3 意図しない情報漏洩
 
@@ -99,6 +92,4 @@
 
 * [OWASP Web Security Testing Guide 4.1: Testing for HTTP Verb Tampering]( https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/03-Testing_for_HTTP_Verb_Tampering.html)
 * [OWASP Web Security Testing Guide 4.1: Configuration and Deployment Management Testing](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/README.html)
-* [Defining multiple repositories in Maven](https://maven.apache.org/guides/mini/guide-multiple-repositories.html)
-* [Software Component Verification Standard V2 L1-3 requirements](https://github.com/OWASP/Software-Component-Verification-Standard/blob/master/en/0x11-V2-Software_Bill_of_Materials.md)
 * [Tips to Reduce the Attack Surface When Using Third-Party Libraries](https://www.slideshare.net/KatyAnton1/tips-to-reduce-the-attack-surface-when-using-thirdparty-libraries)
