@@ -63,7 +63,7 @@
 
 詳しくは以下の情報を参照してください。
 
-* [Consider using the Security Headers website to check security and anti-caching headers](https://securityheaders.com/)
+* [Consider using the Security Headers website to check security and anti-caching header fields](https://securityheaders.com/)
 * [Documentation about anti-caching headers by Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)
 * [OWASP Secure Headers project](https://owasp.org/www-project-secure-headers/)
 * [OWASP Privacy Risks Project](https://owasp.org/www-project-top-10-privacy-risks/)
