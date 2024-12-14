@@ -25,3 +25,6 @@
 * [V53: WebRTC](0x53-V53-WebRTC.md)
 * [付録 A: 用語集](0x90-Appendix-A_Glossary.md)
 * [付録 B: 参考情報](0x91-Appendix-B_References.md)
+* [付録 V: 暗号化](0x97-Appendix-V_Cryptography.md)
+* [付録 W: LLM セキュリティ](0x98-Appendix-W_LLM_Security.md)
+* [付録 X: 推奨事項](0x99-Appendix-X_Recommendations.md)
