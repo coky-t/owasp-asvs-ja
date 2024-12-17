@@ -18,7 +18,7 @@
 * **動的アプリケーションセキュリティテスト** (Dynamic Application Security Testing, DAST) - 実行状態のアプリケーションのセキュリティ脆弱性を示す条件を検出するように設計されたテスト技法です。
 * **動的検証** (Dynamic Verification) - 脆弱性シグネチャを使用してアプリケーションの実行中に問題を発見する自動ツールを使用する検証です。
 * **ファイド** (Fast IDentity Online, FIDO) - バイオメトリクス、トラステッドプラットフォームモジュール (Trusted Platform Module, TPM) 、USB セキュリティトークンなど、さまざまな認証方式を使用できるようにする一連の認証標準です。
-* **ユニバーサル一意識別子** (Univerally Unique Identifier, UUID) - ソフトウェアで識別子として使用される一意の参照番号です。
+* **ユニバーサル一意識別子** (Universally Unique Identifier, UUID) - ソフトウェアで識別子として使用される一意の参照番号です。
 * **ハイパーテキスト転送プロトコル** (HyperText Transfer Protocol, HTTP) - 分散、協調、ハイパーメディア情報システムのためのアプリケーションプロトコルです。World Wide Web のためのデータ通信の基盤です。
 * **ハードコードされた鍵** (Hardcoded Keys) - コード、コメント、ファイルなどファイルシステムに格納されている暗号鍵です。
 * **ハードウェアセキュリティモジュール** (Hardware Security Module, HSM) - 暗号化鍵とその他のシークレットを保護された方法で保存するハードウェアコンポーネントです。
