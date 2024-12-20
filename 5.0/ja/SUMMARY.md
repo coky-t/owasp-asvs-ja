@@ -5,6 +5,7 @@
 * [序文](0x02-Preface.md)
 * [ASVS の使い方](0x03-Using-ASVS.md)
 * [監査と認証](0x04-Assessment_and_Certification.md)
+* [バージョン 4.0 ユーザ向けのガイダンス](0x05-For-Users-Of-4.0.md)
 * [V1: セキュリティ決定ドキュメント](0x10-V1-Architecture.md)
 * [V2: 認証](0x11-V2-Authentication.md)
 * [V3: セッション管理](0x12-V3-Session-management.md)
