@@ -1,9 +1,9 @@
 {
-  "root" : "./5.0/ja",
+  "root" : ".",
   "plugins" : [ "anchors" ],
 
   "structure": {
-    "readme": "0x02-Preface.md"
+    "readme": "README.md"
   }
 
 }
