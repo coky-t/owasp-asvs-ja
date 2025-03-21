@@ -16,7 +16,7 @@
 - [V4: アクセス制御](5.0/ja/0x12-V4-Access-Control.md)
 - [V5: エンコーディングとサニタイゼーション](5.0/ja/0x13-V5-Encoding-Sanitization.md)
 - [V6: 暗号化](5.0/ja/0x14-V6-Cryptography.md)
-- [V7: セキュリティログ記録およびエラー処理](5.0/ja/0x15-V7-Error-Logging.md)
+- [V7: セキュリティログ記録とエラー処理](5.0/ja/0x15-V7-Error-Logging.md)
 - [V8: データ保護](5.0/ja/0x16-V8-Data-Protection.md)
 - [V9: 安全な通信](5.0/ja/0x17-V9-Communications.md)
 - [V10: セキュアコーディングアーキテクチャと実装](5.0/ja/0x18-V10-Coding.md)
