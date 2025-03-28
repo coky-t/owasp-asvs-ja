@@ -17,7 +17,7 @@
 * [V9: 安全な通信](0x17-V9-Communications.md)
 * [V10: セキュアコーディングアーキテクチャと実装](0x18-V10-Coding.md)
 * [V11: ビジネスロジック](0x19-V11-BusLogic.md)
-* [V12: ファイルとリソース](0x20-V12-Files-Resources.md)
+* [V12: ファイル処理](0x20-V12-File-Handling.md)
 * [V13: API と Web サービス](0x21-V13-API.md)
 * [V14: 構成](0x22-V14-Config.md)
 * [V50: Web フロントエンドセキュリティ](0x50-V50-Web-Frontend-Security.md)
