@@ -36,7 +36,6 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 * [付録 A: 用語集](5.0/ja/0x90-Appendix-A_Glossary.md)
 * [付録 B: 参考情報](5.0/ja/0x91-Appendix-B_References.md)
 * [付録 V: 暗号化](5.0/ja/0x97-Appendix-V_Cryptography.md)
-* [付録 W: LLM セキュリティ](5.0/ja/0x98-Appendix-W_LLM_Security.md)
 * [付録 X: 推奨事項](5.0/ja/0x99-Appendix-X_Recommendations.md)
 
 ### 参考資料
