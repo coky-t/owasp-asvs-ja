@@ -8,7 +8,7 @@
 * [バージョン 4.0 ユーザ向けのガイダンス](0x05-For-Users-Of-4.0.md)
 * [V2: 認証](0x11-V2-Authentication.md)
 * [V3: セッション管理](0x12-V3-Session-management.md)
-* [V4: アクセス制御](0x12-V4-Access-Control.md)
+* [V4: 認可](0x12-V4-Authorization.md)
 * [V5: エンコーディングとサニタイゼーション](0x13-V5-Encoding-Sanitization.md)
 * [V6: 暗号化](0x14-V6-Cryptography.md)
 * [V7: セキュリティログ記録とエラー処理](0x15-V7-Error-Logging.md)
