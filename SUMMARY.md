@@ -13,7 +13,7 @@
 - [V2: 認証](5.0/ja/0x15-V6-Authentication.md)
 - [V3: セッション管理](5.0/ja/0x16-V7-Session-Management.md)
 - [V4: 認可](5.0/ja/0x17-V8-Authorization.md)
-- [V5: エンコーディングとサニタイゼーション](5.0/ja/0x10-V1-Encoding-Sanitization)
+- [V5: エンコーディングとサニタイゼーション](5.0/ja/0x10-V1-Encoding-Sanitization.md)
 - [V6: 暗号化](5.0/ja/0x20-V11-Cryptography.md)
 - [V7: セキュリティログ記録とエラー処理](5.0/ja/0x25-V16-Logging-and-Error-Handling.md)
 - [V8: データ保護](5.0/ja/0x23-V14-Data-Protection.md)
