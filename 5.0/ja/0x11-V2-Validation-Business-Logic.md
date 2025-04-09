@@ -4,13 +4,13 @@
 
 検証対象のアプリケーションが以下の上位要件を満たすことを確認します。
 
-* ビジネスロジックフローはシーケンシャルであり、順番に処理され、迂回できません。
-* ビジネスロジックには継続的な小額の資金転送や一度に百万の友人の追加の自動攻撃を検出および防御するための制限とコントロールを含んでいます。
-* 高価値のビジネスロジックフローでは悪用ケースや悪意のある人物を考慮し、なりすまし、改竄、情報漏洩、権限昇格の攻撃に対する保護を有しています。
+* ビジネスロジックフローは正しい手順通りに処理され、省略できない。
+* ビジネスロジックに自動攻撃を検知し防止する制限とコントロールを含んでいる。自動攻撃の例としては、連続的な少額の送金や一度に百万人の友人の追加がある。
+* 高い価値を持つビジネスロジックフローにおいて悪用ケースや悪用する人を想定している。また、なりすまし、改竄、情報漏洩、権限昇格攻撃の対策を行っている。
 
-## V2.1 ビジネスロジックドキュメント
+## V2.1 バリデーションとビジネスドキュメント
 
-ビジネスロジックドキュメントは、ビジネスロジックの制限、バリデーションルール、および組み合わされたデータ項目のコンテキストの一貫性を明確に定義して、アプリケーションに実装する必要があるものを明確にする必要があります。
+バリデーションとビジネスロジックドキュメントは、ビジネスロジックの制限、バリデーションルール、および組み合わされたデータ項目のコンテキストの一貫性を明確に定義して、アプリケーションに実装する必要があるものを明確にする必要があります。
 
 | # | 説明 | レベル | #v5.0.be |
 | :---: | :--- | :---: | :---: |
@@ -46,7 +46,7 @@
 
 | # | 説明 | レベル | #v5.0.be |
 | :---: | :--- | :---: | :---: |
-| **2.3.1** | アプリケーションは同じユーザのビジネスロジックフローをシーケンシャルなステップ順序でのみ処理し、ステップをスキップしない。 | 1 | v5.0.be-11.1.1 |
+| **2.3.1** | アプリケーションは同じユーザのビジネスロジックフローを正しい手順通り、省略せずに処理する。 | 1 | v5.0.be-11.1.1 |
 | **2.3.2** | ビジネスロジックの制限はアプリケーションのドキュメントに従って実装され、ビジネスロジックの欠陥が悪用されることを避けている。 | 2 | v5.0.be-11.1.3 |
 | **2.3.3** | トランザクションはビジネスロジックレベルで使用されてビジネスロジックオペレーション全体が成功するか、以前の正しい状態にロールバックされる。 | 2 | v5.0.be-11.1.9 |
 | **2.3.4** | 価値の高いロジックフローは複数ユーザの承認で制限され、認可されていないアクションや偶発的なアクションを防いでいる。これには、多額の送金、契約の承認、重要な原子力施設操作へのアクセス、医療記録の変更、機密情報へのアクセス、製造における安全のオーバーライドなどが含まれるが、これらに限定されない。 | 3 | v5.0.be-11.1.10 |
@@ -64,8 +64,8 @@
 
 詳しくは以下の情報を参照してください。
 
+* [OWASP Web Security Testing Guide 4.2: Input Validation Testing](https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/README.html)
 * [OWASP Web Security Testing Guide 4.2: Business Logic Testing](https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/10-Business_Logic_Testing/README)
-* [OWASP Automated Threats to Web Applications](https://owasp.org/www-project-automated-threats-to-web-applications/) の使用を含め、自動化対策はさまざまな方法で実現できます。
-* [OWASP Testing Guide 4.0: Input Validation Testing](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/README.html)
-* [OWASP Cheat Sheet: Input Validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
+* [OWASP Automated Threats to Web Applications](https://owasp.org/www-project-automated-threats-to-web-applications/) の使用など、アンチオートメーションはさまざまな方法で実現できます。
+* [OWASP Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
 * [JSON Schema](https://json-schema.org/specification.html)
