@@ -24,7 +24,7 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 * [V6: 認証](5.0/ja/0x15-V6-Authentication.md)
 * [V7: セッション管理](5.0/ja/0x16-V7-Session-Management.md)
 * [V8: 認可](5.0/ja/0x17-V8-Authorization.md)
-* [V9: 自己完結型トークン](5.0/ja/0x18-V9-Tokens.md)
+* [V9: 自己完結型トークン](5.0/ja/0x18-V9-Self-contained-Tokens.md)
 * [V10: OAuth と OIDC](5.0/ja/0x19-V10-OAuth2-and-OIDC.md)
 * [V11: 暗号化](5.0/ja/0x20-V11-Cryptography.md)
 * [V12: 安全な通信](5.0/ja/0x21-V12-Communications.md)
