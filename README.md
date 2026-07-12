@@ -2,7 +2,7 @@
 
 This is the unofficial Japanese translation of the [OWASP Application Security Verification Standard](https://github.com/OWASP/ASVS).
 
-- Document Site - <https://coky-t.gitbook.io/owasp-asvs-ja/>
+<!-- - Document Site - <https://coky-t.gitbook.io/owasp-asvs-ja/> -->
 - Document Repository - <https://github.com/coky-t/owasp-asvs-ja>
 
 ### Originator
@@ -55,5 +55,5 @@ This is the unofficial Japanese translation of the [OWASP Application Security V
 
 [Koki Takeyama](https://github.com/coky-t)
 
-- Document Site - <https://coky-t.gitbook.io/owasp-docs-ja/>
+<!-- - Document Site - <https://coky-t.gitbook.io/owasp-docs-ja/> -->
 - Document Repository - <https://github.com/coky-t/owasp-docs-ja>
